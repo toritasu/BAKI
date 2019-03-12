@@ -1,0 +1,63 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  input {
+    margin: 0;
+    padding: 5px
+  }
+  body {
+    width: 720px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #222;
+    color: #fff;
+  }
+  .left {
+    float: left;
+    width: 400px;
+    height: 100%;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  .right {
+    float: left;
+    width:300px;
+    height: 100%;
+    overflow: hidden;
+  }
+  .image {
+    width: 100%;
+    overflow: hidden;
+  }
+  .history {
+    height: 200px;
+    overflow-y: auto;
+  }
+  .command {
+    float:left;
+    margin-right:10px;
+    margin-bottom:20px;
+  }
+  .special {
+    clear:both;
+    margin:auto;
+    width:45%;
+  }
+  .fighter-contaier {
+    height:250px;
+    overflow:hidden;
+    margin-top:5px;
+    margin-bottom:15px;
+  }
+  .fighter {
+    width:19%;
+    height:100%;
+    margin-left:1%;
+    float:left;
+    overflow:hidden;
+  }
+  .fighter_face {
+    width:50%;
+    height:100%;
+  }
