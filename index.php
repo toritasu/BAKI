@@ -4,13 +4,11 @@ ini_set('log_errors', 'on'); // ログを取るか
 ini_set('error_log', 'php.log'); // ログの出力ファイルを指定
 session_start(); // セッションを使う
 
-// 自分のHP
-// define("MY_HP", 500);
-// モンスターたち格納用の配列を宣言
+// モンスターを格納する配列を宣言
 $monsters = array();
 
 // テンションのクラス定数
-class Tension{ //
+class Tension{
   const MAJI = 1;
   const BOKE = 2;
 }
@@ -163,17 +161,17 @@ class History implements HistoryInterface{
 }
 
 // インスタンス生成
-$fighters[] = new Fighter( '範馬刃牙', '『地下格闘場チャンピオン』', 500, 'img/fighter01.png', 'img/fighter01_face.png', 30, 70, 3, Tension::MAJI );
-$fighters[] = new Fighter( '花山薫', '『伝説の喧嘩師』', 800, 'img/fighter02.png', 'img/fighter02_face.png', 120, 120, 9, Tension::MAJI );
-$fighters[] = new Fighter( '愚地独歩', '『武神』', 450, 'img/fighter03.png', 'img/fighter03_face.png', 30, 80, 4, Tension::MAJI );
-$fighters[] = new Fighter( '烈海王', '『海王』', 600, 'img/fighter04.png', 'img/fighter04_face.png', 40, 80, 5, Tension::BOKE );
-$fighters[] = new Fighter( '渋川剛気', '『生きる伝説』', 300, 'img/fighter05.png', 'img/fighter05_face.png', 20, 50, 1.5, Tension::MAJI );
+$fighters[] = new Fighter( '範馬 刃牙', '『地下格闘場チャンピオン』', 500, 'img/fighter01.png', 'img/fighter01_face.png', 30, 70, 3, Tension::MAJI );
+$fighters[] = new Fighter( '花山 薫', '『伝説の喧嘩師』', 800, 'img/fighter02.png', 'img/fighter02_face.png', 120, 120, 9, Tension::MAJI );
+$fighters[] = new Fighter( '愚地 独歩', '『武神』', 450, 'img/fighter03.png', 'img/fighter03_face.png', 30, 80, 4, Tension::MAJI );
+$fighters[] = new Fighter( '烈 海王', '『海王』', 600, 'img/fighter04.png', 'img/fighter04_face.png', 40, 80, 5, Tension::BOKE );
+$fighters[] = new Fighter( '渋川 剛気', '『生きる伝説』', 300, 'img/fighter05.png', 'img/fighter05_face.png', 20, 50, 1.5, Tension::MAJI );
 
 $monsters[] = new WeponMonster( 'ドリアン', '『卑劣を極めしジェントルマン』', 200, 'img/monster01.png', 15,65, 30,60 );
 $monsters[] = new WeponMonster( 'ドイル', '『麗しき人間凶器』', 120, 'img/monster02.png', 30,35, 5,100 );
 $monsters[] = new WeponMonster( 'シコルスキー', '『極寒の地が生んだ究極のクライマー』', 150, 'img/monster03.png', 20,40, 10,20 );
 $monsters[] = new WeponMonster( 'スペック', '『呼吸を捨てた外道』', 200, 'img/monster04.png', 40,50, 20,50 );
-$monsters[] = new WeponMonster( '柳流光', '『人間毒ガス兵器』', 120, 'img/monster05.png', 50,70, 15,40 );
+$monsters[] = new WeponMonster( '柳 流光', '『人間毒ガス兵器』', 120, 'img/monster05.png', 50,70, 15,40 );
 $monsters[] = new Monster( 'ビスケット・オリバ', '『ミスターアンチェイン』', 240, 'img/monster06.png', 5,100 );
 $monsters[] = new Monster( 'ジャック・ハンマー', '『鬼の血を継ぐ戦士』', 220, 'img/monster07.png', 30,55 );
 $monsters[] = new Monster( '範馬勇次郎', '『地上最強の生物』', 300, 'img/monster08.png', 100,300 );
@@ -318,6 +316,10 @@ if(!empty($_POST)){
   }
 }
 ?>
+
+<!-- ====================
+画面表示
+==================== -->
 <!DOCTYPE html>
 <html lang="ja">
   <head>

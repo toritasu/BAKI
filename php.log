@@ -11033,3 +11033,964 @@
     [critical:protected] => 9
 )
 
+[20-Mar-2019 22:16:57 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:16:57 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter02_face.png
+    [tension:protected] => 1
+    [name:protected] => 花山薫
+    [nickname:protected] => 『伝説の喧嘩師』
+    [hp:protected] => 800
+    [img:protected] => img/fighter02.png
+    [attackMin:protected] => 120
+    [attackMax:protected] => 120
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:16:57 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:16:57 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:16:57 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:16:57 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 30
+    [weponAttackMax:WeponMonster:private] => 60
+    [name:protected] => ドリアン
+    [nickname:protected] => 『卑劣を極めしジェントルマン』
+    [hp:protected] => 200
+    [img:protected] => img/monster01.png
+    [attackMin:protected] => 15
+    [attackMax:protected] => 65
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:16:58 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:16:58 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:03 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:03 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter04_face.png
+    [tension:protected] => 2
+    [name:protected] => 烈海王
+    [nickname:protected] => 『海王』
+    [hp:protected] => 600
+    [img:protected] => img/fighter04.png
+    [attackMin:protected] => 40
+    [attackMax:protected] => 80
+    [critical:protected] => 5
+)
+
+[20-Mar-2019 22:17:03 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:03 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:03 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:03 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 15
+    [weponAttackMax:WeponMonster:private] => 40
+    [name:protected] => 柳流光
+    [nickname:protected] => 『人間毒ガス兵器』
+    [hp:protected] => 120
+    [img:protected] => img/monster05.png
+    [attackMin:protected] => 50
+    [attackMax:protected] => 70
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:05 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 60
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 263
+[20-Mar-2019 22:17:05 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 4
+)
+
+[20-Mar-2019 22:17:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:05 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ビスケット・オリバ
+    [nickname:protected] => 『ミスターアンチェイン』
+    [hp:protected] => 240
+    [img:protected] => img/monster06.png
+    [attackMin:protected] => 5
+    [attackMax:protected] => 100
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:06 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:07 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:07 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 60
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:08 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:08 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 263
+[20-Mar-2019 22:17:08 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 4
+    [1] => 4
+)
+
+[20-Mar-2019 22:17:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:08 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 30
+    [weponAttackMax:WeponMonster:private] => 60
+    [name:protected] => ドリアン
+    [nickname:protected] => 『卑劣を極めしジェントルマン』
+    [hp:protected] => 200
+    [img:protected] => img/monster01.png
+    [attackMin:protected] => 15
+    [attackMax:protected] => 65
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:09 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 136
+[20-Mar-2019 22:17:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:32 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 136
+[20-Mar-2019 22:17:32 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:33 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:33 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 263
+[20-Mar-2019 22:17:33 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 4
+    [1] => 4
+    [2] => 0
+)
+
+[20-Mar-2019 22:17:33 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:33 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => 範馬勇次郎
+    [nickname:protected] => 『地上最強の生物』
+    [hp:protected] => 300
+    [img:protected] => img/monster08.png
+    [attackMin:protected] => 100
+    [attackMax:protected] => 300
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:34 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:34 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 92
+[20-Mar-2019 22:17:34 Asia/Tokyo] ゲームオーバー
+[20-Mar-2019 22:17:35 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:35 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter01_face.png
+    [tension:protected] => 1
+    [name:protected] => 範馬刃牙
+    [nickname:protected] => 『地下格闘場チャンピオン』
+    [hp:protected] => 500
+    [img:protected] => img/fighter01.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 70
+    [critical:protected] => 3
+)
+
+[20-Mar-2019 22:17:35 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:35 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:35 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:35 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ビスケット・オリバ
+    [nickname:protected] => 『ミスターアンチェイン』
+    [hp:protected] => 240
+    [img:protected] => img/monster06.png
+    [attackMin:protected] => 5
+    [attackMax:protected] => 100
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:36 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[20-Mar-2019 22:17:36 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:39 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 300
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[20-Mar-2019 22:17:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[20-Mar-2019 22:17:39 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 30
+    [weponAttackMax:WeponMonster:private] => 60
+    [name:protected] => ドリアン
+    [nickname:protected] => 『卑劣を極めしジェントルマン』
+    [hp:protected] => 200
+    [img:protected] => img/monster01.png
+    [attackMin:protected] => 15
+    [attackMax:protected] => 65
+    [critical:protected] => 9
+)
+
+[20-Mar-2019 22:17:40 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[20-Mar-2019 22:17:40 Asia/Tokyo] POSTされたッ！
+[20-Mar-2019 22:17:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:27:45 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:27:45 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter03_face.png
+    [tension:protected] => 1
+    [name:protected] => 愚地独歩
+    [nickname:protected] => 『武神』
+    [hp:protected] => 450
+    [img:protected] => img/fighter03.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 80
+    [critical:protected] => 4
+)
+
+[22-Mar-2019 14:27:45 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 14:27:45 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 14:27:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 14:27:45 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 30
+    [weponAttackMax:WeponMonster:private] => 60
+    [name:protected] => ドリアン
+    [nickname:protected] => 『卑劣を極めしジェントルマン』
+    [hp:protected] => 200
+    [img:protected] => img/monster01.png
+    [attackMin:protected] => 15
+    [attackMax:protected] => 65
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:27:46 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 60
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 136
+[22-Mar-2019 14:27:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:27:47 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:27:47 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:27:48 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 136
+[22-Mar-2019 14:27:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:04 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 60
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 263
+[22-Mar-2019 14:31:04 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 0
+)
+
+[22-Mar-2019 14:31:04 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 14:31:04 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ジャック・ハンマー
+    [nickname:protected] => 『鬼の血を継ぐ戦士』
+    [hp:protected] => 220
+    [img:protected] => img/monster07.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 55
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:05 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:05 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:05 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:06 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:06 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:07 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 263
+[22-Mar-2019 14:31:07 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 0
+    [1] => 5
+)
+
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 14:31:07 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 10
+    [weponAttackMax:WeponMonster:private] => 20
+    [name:protected] => シコルスキー
+    [nickname:protected] => 『極寒の地が生んだ究極のクライマー』
+    [hp:protected] => 150
+    [img:protected] => img/monster03.png
+    [attackMin:protected] => 20
+    [attackMax:protected] => 40
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:07 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 56
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 65
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 113
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 136
+[22-Mar-2019 14:31:07 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 89
+[22-Mar-2019 14:31:08 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:08 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 300
+[22-Mar-2019 14:31:08 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 14:31:08 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => 範馬勇次郎
+    [nickname:protected] => 『地上最強の生物』
+    [hp:protected] => 300
+    [img:protected] => img/monster08.png
+    [attackMin:protected] => 100
+    [attackMax:protected] => 300
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 14:31:09 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:09 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:09 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 237
+[22-Mar-2019 14:31:11 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 14:31:11 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter03_face.png
+    [tension:protected] => 1
+    [name:protected] => 愚地独歩
+    [nickname:protected] => 『武神』
+    [hp:protected] => 450
+    [img:protected] => img/fighter03.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 80
+    [critical:protected] => 4
+)
+
+[22-Mar-2019 14:31:11 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 14:31:11 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 14:31:11 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 14:31:11 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 10
+    [weponAttackMax:WeponMonster:private] => 20
+    [name:protected] => シコルスキー
+    [nickname:protected] => 『極寒の地が生んだ究極のクライマー』
+    [hp:protected] => 150
+    [img:protected] => img/monster03.png
+    [attackMin:protected] => 20
+    [attackMax:protected] => 40
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 14:31:13 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 227
+[22-Mar-2019 14:31:13 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 22:55:01 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 22:55:01 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter03_face.png
+    [tension:protected] => 1
+    [name:protected] => 愚地独歩
+    [nickname:protected] => 『武神』
+    [hp:protected] => 450
+    [img:protected] => img/fighter03.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 80
+    [critical:protected] => 4
+)
+
+[22-Mar-2019 22:55:01 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 22:55:01 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 195
+[22-Mar-2019 22:55:01 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 206
+[22-Mar-2019 22:55:01 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ビスケット・オリバ
+    [nickname:protected] => 『ミスターアンチェイン』
+    [hp:protected] => 240
+    [img:protected] => img/monster06.png
+    [attackMin:protected] => 5
+    [attackMax:protected] => 100
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:19:28 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:19:28 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter02_face.png
+    [tension:protected] => 1
+    [name:protected] => 花山薫
+    [nickname:protected] => 『伝説の喧嘩師』
+    [hp:protected] => 800
+    [img:protected] => img/fighter02.png
+    [attackMin:protected] => 120
+    [attackMax:protected] => 120
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:19:28 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 193
+[22-Mar-2019 23:19:28 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 193
+[22-Mar-2019 23:19:28 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:19:28 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 20
+    [weponAttackMax:WeponMonster:private] => 50
+    [name:protected] => スペック
+    [nickname:protected] => 『呼吸を捨てた外道』
+    [hp:protected] => 200
+    [img:protected] => img/monster04.png
+    [attackMin:protected] => 40
+    [attackMax:protected] => 50
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:19:30 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:19:30 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:19:30 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+)
+
+[22-Mar-2019 23:19:30 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:19:30 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => 範馬勇次郎
+    [nickname:protected] => 『地上最強の生物』
+    [hp:protected] => 300
+    [img:protected] => img/monster08.png
+    [attackMin:protected] => 100
+    [attackMax:protected] => 300
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:19:31 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:19:31 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:19:31 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:38 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:20:38 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+    [1] => 6
+)
+
+[22-Mar-2019 23:20:38 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:38 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 5
+    [weponAttackMax:WeponMonster:private] => 100
+    [name:protected] => ドイル
+    [nickname:protected] => 『麗しき人間凶器』
+    [hp:protected] => 120
+    [img:protected] => img/monster02.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 35
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:39 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:39 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:39 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:40 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:40 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:40 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:41 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 58
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:41 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:41 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:42 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 58
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:42 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:42 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:42 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:43 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:43 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:20:43 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+    [1] => 6
+    [2] => 1
+)
+
+[22-Mar-2019 23:20:43 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:43 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 30
+    [weponAttackMax:WeponMonster:private] => 60
+    [name:protected] => ドリアン
+    [nickname:protected] => 『卑劣を極めしジェントルマン』
+    [hp:protected] => 200
+    [img:protected] => img/monster01.png
+    [attackMin:protected] => 15
+    [attackMax:protected] => 65
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:44 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:44 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:44 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:44 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:44 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:44 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:45 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:45 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:46 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:46 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:20:46 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+    [1] => 6
+    [2] => 1
+    [3] => 0
+)
+
+[22-Mar-2019 23:20:46 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:46 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 10
+    [weponAttackMax:WeponMonster:private] => 20
+    [name:protected] => シコルスキー
+    [nickname:protected] => 『極寒の地が生んだ究極のクライマー』
+    [hp:protected] => 150
+    [img:protected] => img/monster03.png
+    [attackMin:protected] => 20
+    [attackMax:protected] => 40
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:47 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:47 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:48 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:48 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:48 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:49 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:20:49 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+    [1] => 6
+    [2] => 1
+    [3] => 0
+    [4] => 0
+)
+
+[22-Mar-2019 23:20:49 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:49 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ビスケット・オリバ
+    [nickname:protected] => 『ミスターアンチェイン』
+    [hp:protected] => 240
+    [img:protected] => img/monster06.png
+    [attackMin:protected] => 5
+    [attackMax:protected] => 100
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:51 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:51 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:51 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:52 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:52 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:53 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:53 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[22-Mar-2019 23:20:53 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 3
+    [1] => 6
+    [2] => 1
+    [3] => 0
+    [4] => 0
+    [5] => 1
+)
+
+[22-Mar-2019 23:20:53 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:53 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 15
+    [weponAttackMax:WeponMonster:private] => 40
+    [name:protected] => 柳流光
+    [nickname:protected] => 『人間毒ガス兵器』
+    [hp:protected] => 120
+    [img:protected] => img/monster05.png
+    [attackMin:protected] => 50
+    [attackMax:protected] => 70
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:55 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:55 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:55 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:55 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 132
+[22-Mar-2019 23:20:55 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 134
+[22-Mar-2019 23:20:55 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 87
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:56 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 298
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[22-Mar-2019 23:20:56 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ジャック・ハンマー
+    [nickname:protected] => 『鬼の血を継ぐ戦士』
+    [hp:protected] => 220
+    [img:protected] => img/monster07.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 55
+    [critical:protected] => 9
+)
+
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[22-Mar-2019 23:20:56 Asia/Tokyo] POSTされたッ！
+[22-Mar-2019 23:20:56 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[23-Mar-2019 00:44:27 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 00:44:27 Asia/Tokyo] 選択したキャラ：Fighter Object
+(
+    [imgFace:protected] => img/fighter04_face.png
+    [tension:protected] => 2
+    [name:protected] => 烈海王
+    [nickname:protected] => 『海王』
+    [hp:protected] => 600
+    [img:protected] => img/fighter04.png
+    [attackMin:protected] => 40
+    [attackMax:protected] => 80
+    [critical:protected] => 5
+)
+
+[23-Mar-2019 00:44:27 Asia/Tokyo] PHP Notice:  Undefined index: beatenId in C:\MAMP\htdocs\baki\index.php on line 193
+[23-Mar-2019 00:44:27 Asia/Tokyo] PHP Warning:  Invalid argument supplied for foreach() in C:\MAMP\htdocs\baki\index.php on line 193
+[23-Mar-2019 00:44:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[23-Mar-2019 00:44:27 Asia/Tokyo] 登場した敵キャラ：Monster Object
+(
+    [name:protected] => ジャック・ハンマー
+    [nickname:protected] => 『鬼の血を継ぐ戦士』
+    [hp:protected] => 220
+    [img:protected] => img/monster07.png
+    [attackMin:protected] => 30
+    [attackMax:protected] => 55
+    [critical:protected] => 9
+)
+
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[23-Mar-2019 01:28:22 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:28:22 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 90
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[23-Mar-2019 01:28:23 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:28:23 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 90
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[23-Mar-2019 01:31:25 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:31:25 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 90
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[23-Mar-2019 01:31:26 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:31:26 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 90
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Notice:  Undefined index: fighter in C:\MAMP\htdocs\baki\index.php on line 225
+[23-Mar-2019 01:31:27 Asia/Tokyo] POSTされたッ！
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::clear() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 235
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 54
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 63
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 111
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 261
+[23-Mar-2019 01:31:27 Asia/Tokyo] 倒された敵のID：Array
+(
+    [0] => 6
+)
+
+[23-Mar-2019 01:31:27 Asia/Tokyo] PHP Deprecated:  Non-static method History::set() should not be called statically in C:\MAMP\htdocs\baki\index.php on line 204
+[23-Mar-2019 01:31:27 Asia/Tokyo] 登場した敵キャラ：WeponMonster Object
+(
+    [weponAttackMin:WeponMonster:private] => 15
+    [weponAttackMax:WeponMonster:private] => 40
+    [name:protected] => 柳 流光
+    [nickname:protected] => 『人間毒ガス兵器』
+    [hp:protected] => 120
+    [img:protected] => img/monster05.png
+    [attackMin:protected] => 50
+    [attackMax:protected] => 70
+    [critical:protected] => 9
+)
+
