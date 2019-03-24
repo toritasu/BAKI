@@ -15,6 +15,7 @@ $font-size_s: 14px;
 $font-size_m: 18px;
 $font-size_l: 24px;
 $font-size_xl: 30px;
+$font-size_xxl: 36px;
 
 $space_s: 5px;
 $space_m: 10px;
@@ -59,6 +60,9 @@ input {
   color: $font-color_default;
   background-color: transparent;
   border: none;
+  &[type=radio] {
+    display: none;
+  }
 }
 
 // ========================
@@ -73,7 +77,7 @@ input {
     margin-bottom: $space_s;
   }
   .title {
-  font-size: $font-size_l;
+  font-size: $font-size_xxl;
   }
 }
 
@@ -120,11 +124,11 @@ input {
       text-align: left;
       padding: $space_xxl;
       &-nickname {
-        font-size: $font-size_m;
+        font-size: $font-size_l;
         margin-bottom: $space_s;
       }
       &-name {
-        font-size: $font-size_l;
+        font-size: $font-size_xxl;
         margin-bottom: $space_m;
       }
       &-note {
@@ -134,6 +138,7 @@ input {
       &-face {
         width: 300px;
         height: 100%;
+        object-fit: cover;
       }
     }
   }

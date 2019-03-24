@@ -15,7 +15,6 @@ $(function(){
     }).done(function(data){
       console.log('ajax通信しました');
       console.log(data);
-      console.log(data.gen);
       $('.js-character-name').text(data.name);
       $('.js-character-nickname').text(data.nickname);
       $('.js-character-description').text(data.description);
