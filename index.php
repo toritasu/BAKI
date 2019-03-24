@@ -318,7 +318,6 @@ if(!empty($_POST)){
 }
 
 ?>
-
 <!-- ====================
 画面表示
 ==================== -->
@@ -326,7 +325,7 @@ if(!empty($_POST)){
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=deviec-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>刃牙vs最凶死刑囚</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:900" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/reset.css"> <!--順番を間違えないこと-->
@@ -345,18 +344,18 @@ if(!empty($_POST)){
         <!-- 選択した戦士の詳細を表示するウィンドウ -->
         <section class="view">
           <!-- 初期画面は死刑囚５人のカット -->
-          <img class="view-initial" src="img/shikeishu.jpg" alt="最凶死刑囚">
+          <img class="view-initial js-view-initial" src="img/shikeishu.jpg" alt="最凶死刑囚">
           <!-- 選択したグラップラーの詳細を表示する -->
-          <div class="view-selection">
+          <div class="view-selection js-view-character">
             <div class="character">
-              <p class="character-nickname">地下格闘場チャンピオン</p>
-              <h2 class="character-name">範馬 刃牙</h2>
-              <p class="character-note">
-                数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン<br>
+              <p class="character-nickname js-character-nickname"><?php echo $fighters[0]->getNickname(); ?></p>
+              <h2 class="character-name js-character-name"><?php echo $fighters[0]->getName(); ?></h2>
+              <p class="character-note js-character-description">
+                数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン。<br>
                 『地上最強』の父親を越えるべく激闘の日々を続けている。
               </p>
             </div>
-            <img class="view-face" src="img/fighter01_face.png" alt="">
+            <img class="character-face js-character-face" src="<?php echo $fighters[0]->getImgFace(); ?>" alt="">
           </div>
         </section>
 
@@ -367,13 +366,13 @@ if(!empty($_POST)){
             <!-- 戦士たちの画像を読み込む -->
             <?php foreach($fighters as $key => $val): ?>
               <label class="panel panel-fighter">
-                <input type="radio" name="fighter" value=<?php echo ($val === reset($fighters)) ? $key.' checked="checked"' : $key; ?>>
+                <input type="radio" name="fighter" value=<?php echo $key; ?>>
                 <?php echo $val->getName(); ?>
                 <img class="panel-image" src="<?php echo $val->getImg(); ?>">
               </label>
             <?php endforeach ?>
             </div>
-            <input class="btn btn-inactive" type="submit" name="start" value="肉宴開幕ッ!">
+            <input class="btn btn-inactive js-btn-prohibit" type="submit" name="start" value="選べッ!!" disabled="disabled">
           </form>
         </section>
       </main>
@@ -429,6 +428,6 @@ if(!empty($_POST)){
     src="http://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="js/app.js"></script>
   </body>
 </html>

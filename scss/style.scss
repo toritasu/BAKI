@@ -96,21 +96,25 @@ input {
   position: relative;
   overflow: hidden;
   &-initial {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 2;
     object-fit: cover;
-    z-index: 1;
   }
   &-selection {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background-image: url("../img/character_cutin.gif");
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
     .character {
       color: $font-color_dark;
       text-align: left;
@@ -127,10 +131,10 @@ input {
         font-size: $font-size_default;
         line-height: $font-size_default + 4px;
       }
-    }
-    .view-face {
-      width: 300px;
-      height: 100%;
+      &-face {
+        width: 300px;
+        height: 100%;
+      }
     }
   }
 }
@@ -144,6 +148,7 @@ input {
   overflow: hidden;
   margin-bottom: $space_m;
   transition: .5s;
+  cursor: pointer;
   &:hover {
     background-color: $color_background_red;
   }
@@ -177,11 +182,13 @@ input {
   border-radius: 5px;
   padding: $space_l $space_xl;
   &-inactive {
+    cursor: not-allowed;
     background: -moz-radial-gradient(#DBD7D7, #717171);
     background: -webkit-radial-gradient(#DBD7D7, #717171);
     background: radial-gradient(#DBD7D7, #717171);
   }
   &-active {
+    cursor: pointer;
     background: -moz-radial-gradient(#C85353, #642A2A);
     background: -webkit-radial-gradient(#C85353, #642A2A);
     background: radial-gradient(#C85353, #642A2A);

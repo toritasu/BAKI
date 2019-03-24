@@ -48,20 +48,24 @@ input {
   position: relative;
   overflow: hidden; }
   .view-initial {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index: 1; }
+    z-index: 2;
+    object-fit: cover; }
   .view-selection {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background-image: url("../img/character_cutin.gif");
     background-size: cover;
     display: flex;
-    justify-content: space-between;
-    z-index: 2; }
+    justify-content: space-between; }
     .view-selection .character {
       color: #1E1E1E;
       text-align: left;
@@ -75,16 +79,17 @@ input {
       .view-selection .character-note {
         font-size: 16px;
         line-height: 20px; }
-    .view-selection .view-face {
-      width: 300px;
-      height: 100%; }
+      .view-selection .character-face {
+        width: 300px;
+        height: 100%; }
 
 .panel {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
-  transition: .5s; }
+  transition: .5s;
+  cursor: pointer; }
   .panel:hover {
     background-color: #CC3535; }
   .panel-group {
@@ -109,10 +114,12 @@ input {
   border-radius: 5px;
   padding: 15px 20px; }
   .btn-inactive {
+    cursor: not-allowed;
     background: -moz-radial-gradient(#DBD7D7, #717171);
     background: -webkit-radial-gradient(#DBD7D7, #717171);
     background: radial-gradient(#DBD7D7, #717171); }
   .btn-active {
+    cursor: pointer;
     background: -moz-radial-gradient(#C85353, #642A2A);
     background: -webkit-radial-gradient(#C85353, #642A2A);
     background: radial-gradient(#C85353, #642A2A); }
