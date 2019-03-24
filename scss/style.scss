@@ -1,0 +1,210 @@
+// ========================
+// 変数
+// ========================
+$font-color_default: #fff;
+$font-color_dark: #1E1E1E;
+$font-color_red: #CC3535;
+$color_background: #333;
+$color_background_red: #CC3535;
+
+$site_width: 800px;
+
+$font-size_default: 16px;
+$font-size_button: 20px;
+$font-size_s: 14px;
+$font-size_m: 18px;
+$font-size_l: 24px;
+$font-size_xl: 30px;
+
+$space_s: 5px;
+$space_m: 10px;
+$space_l: 15px;
+$space_xl: 20px;
+$space_xxl: 30px;
+
+$font-family_corp: 'Noto Serif SC', serif;
+
+// ========================
+// base
+// ========================
+html, body {
+  width: 100%;
+  color: $font-color_default;
+  background-color: $color_background;
+  font-size: $font-size_default;
+  font-family: $font-family_corp;
+}
+
+p, a {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $font-color_red;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  transition: .3s;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+input {
+  font: inherit;
+  color: $font-color_default;
+  background-color: transparent;
+  border: none;
+}
+
+// ========================
+// header
+// ========================
+.header {
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: $space_m;
+  .logo {
+    width: 20%;
+    margin-bottom: $space_s;
+  }
+  .title {
+  font-size: $font-size_l;
+  }
+}
+
+// ========================
+// container
+// ========================
+.container {
+  width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+// ========================
+// View Screen
+// ========================
+.view {
+  margin-bottom: $space_xl;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  &-initial {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &-selection {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/character_cutin.gif");
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    .character {
+      color: $font-color_dark;
+      text-align: left;
+      padding: $space_xxl;
+      &-nickname {
+        font-size: $font-size_m;
+        margin-bottom: $space_s;
+      }
+      &-name {
+        font-size: $font-size_l;
+        margin-bottom: $space_m;
+      }
+      &-note {
+        font-size: $font-size_default;
+        line-height: $font-size_default + 4px;
+      }
+    }
+    .view-face {
+      width: 300px;
+      height: 100%;
+    }
+  }
+}
+
+// ========================
+// キャラ選択
+// ========================
+.panel {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: $space_m;
+  transition: .5s;
+  &:hover {
+    background-color: $color_background_red;
+  }
+  &-group {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-right: -$space_s;
+    .panel {
+      margin-right: $space_s;
+    }
+  }
+  &-text {
+    margin-bottom: $space_m;
+  }
+  &-fighter {
+    width: calc(25% - #{$space_s});
+  }
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// ========================
+// ボタン
+// ========================
+.btn {
+  font-size: $font-size_button;
+  border: 2px solid #E4E4E4;
+  border-radius: 5px;
+  padding: $space_l $space_xl;
+  &-inactive {
+    background: -moz-radial-gradient(#DBD7D7, #717171);
+    background: -webkit-radial-gradient(#DBD7D7, #717171);
+    background: radial-gradient(#DBD7D7, #717171);
+  }
+  &-active {
+    background: -moz-radial-gradient(#C85353, #642A2A);
+    background: -webkit-radial-gradient(#C85353, #642A2A);
+    background: radial-gradient(#C85353, #642A2A);
+  }
+}
+// ========================
+// フッター
+// ========================
+.footer {
+  height: 80px;
+  position: relative;
+  .link_anime {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: $space_m;
+    transform: translate(-50%);
+  }
+  .link_start {
+    top: $space_m;
+    &::before {
+      border: 1px solid $font-color_red;
+    }
+
+  }
+}

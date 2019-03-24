@@ -1,5 +1,4 @@
 <?php
-
 ini_set('log_errors', 'on'); // ログを取るか
 ini_set('error_log', 'php.log'); // ログの出力ファイルを指定
 session_start(); // セッションを使う
@@ -302,7 +301,9 @@ if(!empty($_POST)){
 
   // 「スタート画面に戻る」を押した場合
   if($resetFlg){
+    error_log('スタート画面に戻ります');
     $_SESSION = array();
+    // クッキーが生成されていたら削除する（有効期限を現在時刻より前にする）
     if (isset($_COOKIE["PHPSESSID"])) {
       setcookie("PHPSESSID", '', time() - 1800, '/');
     }
@@ -315,6 +316,7 @@ if(!empty($_POST)){
     History::clear();
   }
 }
+
 ?>
 
 <!-- ====================
@@ -324,28 +326,59 @@ if(!empty($_POST)){
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=deviec-width, initial-scale=1">
     <title>刃牙vs最凶死刑囚</title>
-    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:900" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/reset.css"> <!--順番を間違えないこと-->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- キャラクター選択画面 -->
     <?php if(empty($_SESSION)){ ?>
-      <div style="text-align:center;">
-        <img style="height:150px;" src="img/logo.png" alt="">
-        <h2 class="title" style="margin:15px auto;">刃牙よッ 東京にどえらい連中が上陸するッ!!</h2>
-        <p>プレイヤーを選択するのじゃッ!!</p>
-        <form method="post">
-          <div class="fighter-contaier">
-          <?php foreach($fighters as $key => $val): ?>
-            <label class="fighter">
-              <input type="radio" name="fighter" value=<?php echo ($val === reset($fighters)) ? $key.' checked="checked"' : $key; ?>>
-              <?php echo $val->getName(); ?>
-              <img style="height:100%;" src="<?php echo $val->getImg(); ?>">
-            </label>
-          <?php endforeach ?>
+
+      <header class="header">
+        <img class="logo" src="img/logo.png" alt="刃牙ロゴ">
+        <h1 class="title">地下格闘場戦士 VS 最凶死刑囚</h1>
+      </header>
+
+      <main class="container">
+        <!-- 選択した戦士の詳細を表示するウィンドウ -->
+        <section class="view">
+          <!-- 初期画面は死刑囚５人のカット -->
+          <img class="view-initial" src="img/shikeishu.jpg" alt="最凶死刑囚">
+          <!-- 選択したグラップラーの詳細を表示する -->
+          <div class="view-selection">
+            <div class="character">
+              <p class="character-nickname">地下格闘場チャンピオン</p>
+              <h2 class="character-name">範馬 刃牙</h2>
+              <p class="character-note">
+                数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン<br>
+                『地上最強』の父親を越えるべく激闘の日々を続けている。
+              </p>
+            </div>
+            <img class="view-face" src="img/fighter01_face.png" alt="">
           </div>
-          <input style="font-size:16px; clear:both;" type="submit" name="start" value="▶肉宴開幕ッ!">
-        </form>
-      </div>
+        </section>
+
+        <section class="container">
+          <p class="panel-text">グラップラーを選択するのじゃッ!!</p>
+          <form method="post" action="">
+            <div class="panel-group">
+            <!-- 戦士たちの画像を読み込む -->
+            <?php foreach($fighters as $key => $val): ?>
+              <label class="panel panel-fighter">
+                <input type="radio" name="fighter" value=<?php echo ($val === reset($fighters)) ? $key.' checked="checked"' : $key; ?>>
+                <?php echo $val->getName(); ?>
+                <img class="panel-image" src="<?php echo $val->getImg(); ?>">
+              </label>
+            <?php endforeach ?>
+            </div>
+            <input class="btn btn-inactive" type="submit" name="start" value="肉宴開幕ッ!">
+          </form>
+        </section>
+      </main>
+
+    <!-- バトル画面 -->
     <?php } else { ?>
       <!-- 画面左側 -->
       <div class="left">
@@ -376,14 +409,26 @@ if(!empty($_POST)){
 
           <!-- コマンドエリア -->
           <form class="form" method="post">
-            <input class="command" type="submit" name="attack" value="▶攻撃する">
-            <input class="command" type="submit" name="guard" value="▶防御">
-            <input class="command" type="submit" name="escape" value="▶逃げる">
-            <input class="special" type="submit" name="reset" value="▶スタート画面へ">
+            <input class="btn btn-active" type="submit" name="attack" value="攻撃ッ!!">
+            <input class="btn btn-active" type="submit" name="guard" value="防御ッ!!">
+            <input class="btn btn-active" type="submit" name="escape" value="退却ッ!!">
           </form>
         </div>
       </div>
     <?php } ?>
 
+  <footer class="footer">
+    <?php if(!empty($_SESSION)){ ?>
+    <form method="post" action="">
+      <input class="link_start" type="submit" name="reset" value="<< スタート画面へ">
+    </form>
+    <?php } ?>
+    <a class="link_anime" href="http://baki-anime.jp/" target=”_blank”>TVアニメ「バキ」公式サイトへッ!!</a>
+  </footer>
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
   </body>
 </html>
