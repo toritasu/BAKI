@@ -26,12 +26,29 @@ $space_xxl: 30px;
 $font-family_corp: 'Noto Serif SC', serif;
 
 // ========================
+// animation
+// ========================
+// @keyframes button {
+//   0% { transform: scale(1.2); opacity: 1 }
+//   90% { opacity: .1 }
+//   to { transform: scale(1.2, 1.5); opacity: 0 }
+// }
+@keyframes button {
+  50% { transform: scale(0.98) }
+  to { transform: scale(1) }
+}
+@keyframes selected {
+  0% {}
+  90% {}
+  to {}
+}
+
+// ========================
 // base
 // ========================
 html, body {
   width: 100%;
   color: $font-color_default;
-  background-color: $color_background;
   font-size: $font-size_default;
   font-family: $font-family_corp;
 }
@@ -64,6 +81,22 @@ input {
     display: none;
   }
 }
+// ========================
+// 背景
+// ========================
+body {
+  background-color: black;
+}
+// ========================
+// container
+// ========================
+.container {
+  background-color: $color_background;
+  width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 // ========================
 // header
@@ -73,22 +106,13 @@ input {
   text-align: center;
   margin-bottom: $space_m;
   .logo {
-    width: 20%;
+    width: auto;
+    height: 150px;
     margin-bottom: $space_s;
   }
   .title {
-  font-size: $font-size_xxl;
+    font-size: $font-size_xxl;
   }
-}
-
-// ========================
-// container
-// ========================
-.container {
-  width: $site-width;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 // ========================
@@ -107,6 +131,25 @@ input {
     height: 100%;
     z-index: 2;
     object-fit: cover;
+    .message {
+      font-size: $font-size_xl;
+      color: $font-color_red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      object-fit: cover;
+    }
+    .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      object-fit: cover;
+    }
   }
   &-selection {
     position: absolute;
@@ -125,11 +168,11 @@ input {
       padding: $space_xxl;
       &-nickname {
         font-size: $font-size_l;
-        margin-bottom: $space_s;
+        margin-bottom: $space_m;
       }
       &-name {
         font-size: $font-size_xxl;
-        margin-bottom: $space_m;
+        margin-bottom: $space_l;
       }
       &-note {
         font-size: $font-size_default;
@@ -138,6 +181,7 @@ input {
       &-face {
         width: 300px;
         height: 100%;
+        margin-right: $space_xxl;
         object-fit: cover;
       }
     }
@@ -166,8 +210,12 @@ input {
       margin-right: $space_s;
     }
   }
+  &-title {
+    font-size: $font-size_l;
+    margin-bottom: $space_xl;
+  }
   &-text {
-    margin-bottom: $space_m;
+    margin-bottom: $space_l;
   }
   &-fighter {
     width: calc(25% - #{$space_s});
@@ -186,6 +234,7 @@ input {
   border: 2px solid #E4E4E4;
   border-radius: 5px;
   padding: $space_l $space_xl;
+  position: relative;
   &-inactive {
     cursor: not-allowed;
     background: -moz-radial-gradient(#DBD7D7, #717171);
@@ -197,6 +246,28 @@ input {
     background: -moz-radial-gradient(#C85353, #642A2A);
     background: -webkit-radial-gradient(#C85353, #642A2A);
     background: radial-gradient(#C85353, #642A2A);
+    &.animated {
+      animation: button 1s ease-out infinite;
+    }
+  }
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: #C85353;
+    border: 1px solid #642A2A;
+    z-index: 100;
+    transform: translate3d(0,0,0);
+  }
+  &::before {
+    animation: button 2s ease-out infinite;
+  }
+  &::after {
+    animation: button 2s ease-out 1s infinite;
   }
 }
 // ========================

@@ -14,38 +14,37 @@
   <body>
     <!-- キャラクター選択画面 -->
     <?php if(empty($_SESSION)){ ?>
-
-      <header class="header">
-        <img class="logo" src="img/logo.png" alt="刃牙ロゴ">
-        <h1 class="title">地下格闘場戦士 VS 最凶死刑囚</h1>
-      </header>
-
       <main class="container">
+        <header class="header">
+          <img class="logo" src="img/logo.png" alt="刃牙ロゴ">
+          <h1 class="title">地下格闘場戦士 VS 最凶死刑囚</h1>
+        </header>
         <!-- 選択した戦士の詳細を表示するウィンドウ -->
         <section class="view">
           <!-- 初期画面は死刑囚５人のカット -->
-          <img class="view-initial js-view-initial" src="img/shikeishu.jpg" alt="最凶死刑囚">
+          <div class="view-initial js-view-initial">
+            <h2 class="message">「敗北を知りたい」</h2>
+            <img class="image" src="img/shikeishu.jpg" alt="最凶死刑囚">
+          </div>
           <!-- 選択したグラップラーの詳細を表示する -->
           <div class="view-selection js-view-character">
             <div class="character">
-              <p class="character-nickname js-character-nickname"><?php echo $fighters[0]->getNickname(); ?></p>
-              <h2 class="character-name js-character-name"><?php echo $fighters[0]->getName(); ?></h2>
-              <p class="character-note js-character-description">
-                数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン。<br>
-                『地上最強』の父親を越えるべく激闘の日々を続けている。
-              </p>
+              <p class="character-nickname js-character-nickname"></p>
+              <h2 class="character-name js-character-name"></h2>
+              <p class="character-note js-character-description"></p>
             </div>
             <img class="character-face js-character-face" src="<?php echo $fighters[0]->getImgFace(); ?>" alt="">
           </div>
         </section>
 
         <section class="container">
+          <h2 class="panel-title">東京にどえらい連中が上陸するッ!!</h2>
           <p class="panel-text">グラップラーを選択するのじゃッ!!</p>
           <form method="post" action="">
             <div class="panel-group">
             <!-- 戦士たちの画像を読み込む -->
             <?php foreach($fighters as $key => $val): ?>
-              <label class="panel panel-fighter">
+              <label class="panel panel-fighter js-panel-bg">
                 <input type="radio" name="fighter" value=<?php echo $key; ?>>
                 <img class="panel-image" src="<?php echo $val->getImg(); ?>">
               </label>
@@ -54,12 +53,11 @@
             <input class="btn btn-inactive js-btn-prohibit" type="submit" name="start" value="選べッ!!" disabled="disabled">
           </form>
         </section>
-      </main>
 
     <!-- バトル画面 -->
     <?php } else { ?>
       <!-- 画面左側 -->
-      <div class="left">
+      <div class="">
         <h2><?php echo $_SESSION['monster']->getNickname().$_SESSION['monster']->getName(); ?>だッ!!</h2>
 
         <!-- 敵キャラのHPゲージ -->
@@ -103,6 +101,8 @@
     <?php } ?>
     <a class="link_anime" href="http://baki-anime.jp/" target=”_blank”>TVアニメ「バキ」公式サイトへッ!!</a>
   </footer>
+
+  </main>
   <script
     src="http://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="

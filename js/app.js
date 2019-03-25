@@ -4,8 +4,8 @@ $(function(){
 
     $('.js-view-initial').hide();
     $('.js-btn-prohibit').removeClass('btn-inactive')
-                         .addClass('btn-active')
-                         .val('肉宴開始ッ!!')
+                         .addClass('btn-active animated')
+                         .val('肉宴開幕ッ!!')
                          .prop('disabled', false);
     $.ajax({
       type: "POST",

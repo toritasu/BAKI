@@ -172,7 +172,7 @@ class History implements HistoryInterface{
 $fighters[] = new Fighter( '範馬 刃牙', '刃牙', '『地下格闘場チャンピオン』', '数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン。『地上最強』の父親を越えるべく激闘の日々を続けている。', 500, 'img/fighter01.png', 'img/fighter01_face.png', 30, 70, 3, Tension::MAJI );
 $fighters[] = new Fighter( '花山 薫', '花山', '『伝説の喧嘩師』', '15歳にして花山組2代目を襲名した『日本一の喧嘩師』常人離れの握力を誇り、素手喧嘩（ステゴロ）をモットーとしている。', 800, 'img/fighter02.png', 'img/fighter02_face.png', 120, 120, 9, Tension::MAJI );
 $fighters[] = new Fighter( '愚地 独歩', '独歩', '『武神』', '実戦空手『神心会』の創始者で、『人食い愚地』の異名を取る。かつてはシベリアトラを素手で屠ったことも。', 450, 'img/fighter03.png', 'img/fighter03_face.png', 30, 80, 4, Tension::MAJI );
-$fighters[] = new Fighter( '烈 海王', '烈', '『海王』', '中国武術界における高位の称号『海王』を名に持つ拳雄。4000年を誇る中国拳法の歴史においてNo.1といわれる天才', 600, 'img/fighter04.png', 'img/fighter04_face.png', 40, 80, 5, Tension::BOKE );
+$fighters[] = new Fighter( '烈 海王', '烈', '『海王』', '中国武術界における高位の称号『海王』を名に持つ拳雄。4000年を誇る中国拳法の歴史においてNo.1といわれる天才。', 600, 'img/fighter04.png', 'img/fighter04_face.png', 40, 80, 5, Tension::BOKE );
 $fighters[] = new Fighter( '渋川 剛気', '渋川', '『生きる伝説』', '小柄で老齢ながら『武の体現』の名に恥じない渋川流合気柔術の達人。合気を実戦レベルまで高めたとして生きる伝説とも呼ばれる。', 300, 'img/fighter05.png', 'img/fighter05_face.png', 20, 50, 1.5, Tension::MAJI );
 
 $monsters[] = new WeponMonster( 'ドリアン', 'ドイル', '『卑劣を極めしジェントルマン』', 200, 'img/monster01.png', 15,65, 30,60 );
