@@ -17,6 +17,7 @@ class Tension{
 abstract class Grappler{
   // プロパティ
   protected $name;
+  protected $nameShort;
   protected $nickname;
   protected $hp;
   protected $img;
@@ -30,7 +31,7 @@ abstract class Grappler{
     return $this->name;
   }
   public function getNameShort(){
-    return $this->nameshort;
+    return $this->nameShort;
   }
   public function getNickname(){
     return $this->nickname;
@@ -56,7 +57,7 @@ abstract class Grappler{
   // attackメソッド
   public function attack($targetObj,$rate = 1){
     $attackPoint = mt_rand($this->attackMin, $this->attackMax) * $rate;
-    History::set($this->getName().'の攻撃ッ!!');
+    History::set($this->getNameShort().'の攻撃ッ!!');
 
     if(!mt_rand(0,$this->critical)){ // 一定の確率でクリティカル
       $attackPoint = $attackPoint * 2;
@@ -105,12 +106,13 @@ class Fighter extends Grappler{
 // ===============================
 class Monster extends Grappler{
   // コンストラクタ
-  public function __construct($name, $nameShort, $nickname, $hp, $img, $attackMin, $attackMax) {
+  public function __construct($name, $nameShort, $nickname, $hp, $img, $imgFace, $attackMin, $attackMax) {
     $this->name = $name;
-    $this->nameShort = $nameshort;
+    $this->nameShort = $nameShort;
     $this->nickname = $nickname;
     $this->hp = $hp;
     $this->img = $img;
+    $this->imgFace = $imgFace;
     $this->attackMin = $attackMin;
     $this->attackMax = $attackMax;
     $this->critical = 9;
@@ -125,9 +127,9 @@ class Monster extends Grappler{
 class WeponMonster extends Monster{
   private $weponAttackMin;
   private $weponAttackMax;
-  function __construct($name, $nameShort, $nickname, $hp, $img, $attackMin, $attackMax, $weponAttackMin, $weponAttackMax){
+  function __construct($name, $nameShort, $nickname, $hp, $img, $imgFace, $attackMin, $attackMax, $weponAttackMin, $weponAttackMax){
     // 親クラスのコンストラクタで処理する内容を継承したい場合には親コンストラクタを呼び出す
-    parent::__construct($name, $nameShort, $nickname, $hp, $img, $attackMin, $attackMax);
+    parent::__construct($name, $nameShort, $nickname, $hp, $img, $imgFace, $attackMin, $attackMax);
     $this->weponAttackMin = $weponAttackMin;
     $this->weponAttackMax = $weponAttackMax;
   }
@@ -175,14 +177,14 @@ $fighters[] = new Fighter( '愚地 独歩', '独歩', '『武神』', '実戦空
 $fighters[] = new Fighter( '烈 海王', '烈', '『海王』', '中国武術界における高位の称号『海王』を名に持つ拳雄。4000年を誇る中国拳法の歴史においてNo.1といわれる天才。', 600, 'img/fighter04.png', 'img/fighter04_face.png', 40, 80, 5, Tension::BOKE );
 $fighters[] = new Fighter( '渋川 剛気', '渋川', '『生きる伝説』', '小柄で老齢ながら『武の体現』の名に恥じない渋川流合気柔術の達人。合気を実戦レベルまで高めたとして生きる伝説とも呼ばれる。', 300, 'img/fighter05.png', 'img/fighter05_face.png', 20, 50, 1.5, Tension::MAJI );
 
-$monsters[] = new WeponMonster( 'ドリアン', 'ドイル', '『卑劣を極めしジェントルマン』', 200, 'img/monster01.png', 15,65, 30,60 );
-$monsters[] = new WeponMonster( 'ヘクター・ドイル', 'ドイル', '『麗しき人間凶器』', 120, 'img/monster02.png', 30,35, 5,100 );
-$monsters[] = new WeponMonster( 'シコルスキー', 'シコルスキー', '『極寒の地が生んだ究極のクライマー』', 150, 'img/monster03.png', 20,40, 10,20 );
-$monsters[] = new WeponMonster( 'スペック', 'スペック', '『呼吸を捨てた外道』', 200, 'img/monster04.png', 40,50, 20,50 );
-$monsters[] = new WeponMonster( '柳 流光', '柳', '『人間毒ガス兵器』', 120, 'img/monster05.png', 50,70, 15,40 );
-$monsters[] = new Monster( 'ビスケット・オリバ', 'オリバ', '『ミスターアンチェイン』', 240, 'img/monster06.png', 5,100 );
-$monsters[] = new Monster( 'ジャック・ハンマー', 'ジャック', '『鬼の血を継ぐ戦士』', 220, 'img/monster07.png', 30,55 );
-$monsters[] = new Monster( '範馬勇次郎', '勇次郎', '『地上最強の生物』', 300, 'img/monster08.png', 100,300 );
+$monsters[] = new WeponMonster( 'ドリアン', 'ドリアン', '『卑劣を極めしジェントルマン』', 200, 'img/monster01.png', 'img/monster01_face.png', 15,65, 30,60 );
+$monsters[] = new WeponMonster( 'ドイル', 'ドイル', '『麗しき人間凶器』', 120, 'img/monster02.png', 'img/monster02_face.png', 30,35, 5,100 );
+$monsters[] = new WeponMonster( 'シコルスキー', 'シコルスキー', '『極寒の地が生んだ究極のクライマー』', 150, 'img/monster03.png', 'img/monster03_face.png', 20,40, 10,20 );
+$monsters[] = new WeponMonster( 'スペック', 'スペック', '『呼吸を捨てた外道』', 200, 'img/monster04.png', 'img/monster04_face.png', 40,50, 20,50 );
+$monsters[] = new WeponMonster( '柳 流光', '柳', '『人間毒ガス兵器』', 120, 'img/monster05.png', 'img/monster05_face.png', 50,70, 15,40 );
+$monsters[] = new Monster( 'ビスケット・オリバ', 'オリバ', '『ミスターアンチェイン』', 240, 'img/monster06.png', 'img/monster06_face.png', 5,100 );
+$monsters[] = new Monster( 'ジャック・ハンマー', 'ジャック', '『鬼の血を継ぐ戦士』', 220, 'img/monster07.png', 'img/monster07_face.png', 30,55 );
+$monsters[] = new Monster( '範馬勇次郎', '勇次郎', '『地上最強の生物』', 300, 'img/monster08.png', 'img/monster08_face.png', 100,300 );
 
 // 地下格闘場戦士を生成する関数
 function createFighter($key){
@@ -216,6 +218,8 @@ function createMonster(){
   $_SESSION['monsterNum'] = count($monsters);
   $_SESSION['monsterMaxHp'] = $_SESSION['monster']->getHp();
   error_log('登場した敵キャラ：'.print_r($monster,true));
+  // 6. エンカウント用フラグを立てる（後でgetSessionFlashを使って初期化する）
+  $_SESSION['encountFlg'] = true;
 }
 
 // ゲームオーバー時にセッションをリセットする関数
@@ -224,6 +228,14 @@ function gameOver(){
   error_log('ゲームオーバー');
 }
 
+// セッションを１回だけ取得できる
+function getSessionFlash($key){
+  if(!empty($_SESSION[$key])){
+    $data = $_SESSION[$key];
+    $_SESSION[$key] = '';
+    return $data;
+  }
+}
 // ===============================
 // 画面処理開始
 // ===============================

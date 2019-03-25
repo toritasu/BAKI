@@ -6,6 +6,7 @@ $font-color_dark: #1E1E1E;
 $font-color_red: #CC3535;
 $color_background: #333;
 $color_background_red: #CC3535;
+$color_background_black: #000;
 
 $site_width: 800px;
 
@@ -24,24 +25,6 @@ $space_xl: 20px;
 $space_xxl: 30px;
 
 $font-family_corp: 'Noto Serif SC', serif;
-
-// ========================
-// animation
-// ========================
-// @keyframes button {
-//   0% { transform: scale(1.2); opacity: 1 }
-//   90% { opacity: .1 }
-//   to { transform: scale(1.2, 1.5); opacity: 0 }
-// }
-@keyframes button {
-  50% { transform: scale(0.98) }
-  to { transform: scale(1) }
-}
-@keyframes selected {
-  0% {}
-  90% {}
-  to {}
-}
 
 // ========================
 // base
@@ -96,6 +79,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 1200px;
 }
 
 // ========================
@@ -229,6 +215,11 @@ body {
 // ========================
 // ボタン
 // ========================
+@keyframes button {
+  50% { transform: scale(0.98) }
+  to { transform: scale(1) }
+}
+
 .btn {
   font-size: $font-size_button;
   border: 2px solid #E4E4E4;
@@ -271,6 +262,147 @@ body {
   }
 }
 // ========================
+// カットイン
+// ========================
+@keyframes cutin {
+  from { opacity: 0 }
+  25% { opacity: 1; z-index: 3 }
+  90% { opacity: 1; z-index: 3 }
+  to { z-index: -1; opacity: 0 }
+}
+@keyframes cutin-enemy {
+  from { transform: translate(100%); opacity: 0 }
+  15% { transform: translate(0); opacity: 1 }
+  90% { transform: translate(0); opacity: 1 }
+  to { transform: translate(-100%); opacity: 0; }
+}
+.cutin {
+  z-index: -1; // display:noneの設定は難しいので
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  &.show { // getSessionFlashの結果がtrue（＝エンカウント時のターン）のみPHPで付与されるクラス
+    animation: cutin 2s ease-out;
+  }
+  &-enemy {
+    transform: translate(100%);
+    animation: cutin-enemy 2s ease-out;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: $color_background_red;
+    .img {
+      height: 500px;
+      object-fit: contain;
+      object-position: 50% -50%;
+      z-index: 2;
+    }
+    .telop {
+      color: $font-color_red;
+      background-color: $color_background_black;
+      padding: $space_l;
+      .nickname {
+        font-size: $font-size_xl;
+        margin-bottom: $space_m;
+      }
+      .name {
+        font-size: $font-size_xxl;
+      }
+    }
+  }
+}
+// ========================
+// ゲージひな形
+// ========================
+.gauge {
+  width: 100%;
+  height: 20px;
+  background-color: #fff;
+  border: 3px solid #DADADA;
+  border-radius: 20px;
+  &-remain {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border: 1px solid #707070;
+    &-hp {
+      background: -moz-linear-gradient(#F8F080, #B8AF3C);
+      background: -webkit-linear-gradient(#F8F080, #B8AF3C);
+      background: linear-gradient(#F8F080, #B8AF3C);
+    }
+    &-rethal {
+      background: -moz-linear-gradient(#45DF34, #D8FFD2);
+      background: -webkit-linear-gradient(#45DF34, #D8FFD2);
+      background: linear-gradient(#45DF34, #D8FFD2);
+    }
+  }
+}
+// ========================
+// 敵キャラ情報
+// ========================
+.battle-window {
+  height: 700px;
+  position: relative;
+  padding-left: $space_l;
+  padding-right: $space_l;
+  .enemy-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space_s;
+    margin-bottom: $space_s;
+    .name, .hp {
+      display: block;
+      font-size: $font-size_l;
+    }
+  }
+  .enemy-img {
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: contain;
+  }
+  .history {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: -moz-linear-gradient(#B6B4B4, #5B5A5A);
+    background: -webkit-linear-gradient(#B6B4B4, #5B5A5A);
+    background: linear-gradient(#B6B4B4, #5B5A5A);
+    border: 3px solid #DADADA;
+    border-radius: 5px;
+    margin-left: $space_l;
+    margin-right: $space_l;
+    padding: $space_m;
+    overflow-y: scroll;
+    &-text {
+      font-size: $font-size_m;
+      line-height: $font-size_m * 1.5;
+      text-align: left;
+    }
+  }
+}
+
+// ========================
+// ステータス画面
+// ========================
+.status-window {
+  display: flex;
+  justify-content: space-between;
+  padding: $space_l;
+  .fighter-face {
+    width: 35%;
+  }
+  .fighter-status {
+    width: 65%;
+  }
+}
+// ========================
 // フッター
 // ========================
 .footer {
@@ -288,6 +420,5 @@ body {
     &::before {
       border: 1px solid $font-color_red;
     }
-
   }
 }
