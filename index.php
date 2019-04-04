@@ -12,12 +12,26 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- キャラクター選択画面 -->
-    <main class="container">
-    <?php if(empty($_SESSION)){ ?>
+    <!-- gameover変数があればゲームオーバー画面へ -->
+    <?php if($_SESSION['gameover'] || $_SESSION['clear']){ ?>
+      <main class="container">
         <header class="header">
-          <img class="logo" src="img/logo.png" alt="刃牙ロゴ">
-          <h1 class="title">地下格闘場戦士 VS 最凶死刑囚</h1>
+          <img class="header-logo" src="img/logo.png" alt="刃牙ロゴ">
+          <h1 class="header-title">地下格闘場戦士 VS 最凶死刑囚</h1>
+        </header>
+      <?php if($_SESSION['gameover']) { ?>
+        <img src="img/gameover.jpg" style="width:100%;">
+      <?php }elseif($_SESSION['clear']) { ?>
+    <!--clear変数があればゲームクリア画面へ -->
+        <img src="img/clear.jpg" style="width:100%;">
+    <?php $_SESSION = array(); } ?>
+
+      <!-- セッション変数が空ならキャラクター選択画面へ -->
+    <?php }elseif(empty($_SESSION)){ ?>
+      <main class="container">
+        <header class="header">
+          <img class="header-logo" src="img/logo.png" alt="刃牙ロゴ">
+          <h1 class="header-title">地下格闘場戦士 VS 最凶死刑囚</h1>
         </header>
         <!-- 選択した戦士の詳細を表示するウィンドウ -->
         <section class="view">
@@ -33,7 +47,7 @@
               <h2 class="character-name js-character-name"></h2>
               <p class="character-note js-character-description"></p>
             </div>
-            <img class="character-face js-character-face" src="<?php echo $fighters[0]->getImgFace(); ?>" alt="">
+            <img class="character-face js-character-face" src="" alt="">
           </div>
         </section>
 
@@ -55,86 +69,114 @@
         </section>
 
     <?php } else { ?>
-      <!-- バトル画面 -->
-      <!-- 0. カットイン -->
-      <section class="cutin <?php if(getSessionFlash('encountFlg')) echo 'show'; ?>">
-        <div class="cutin-enemy">
-          <img class="img" src="<?php echo $_SESSION['monster']->getImgFace(); ?>" alt="<?php echo $_SESSION['monster']->getName(); ?>">
-          <div class="telop">
-            <p class="nickname"><?php echo $_SESSION['monster']->getNickname(); ?></p>
-            <h2 class="name"><?php echo $_SESSION['monster']->getName(); ?></h2>
-          </div>
-        </div>
-      </section>
+      <!-- セッション変数があればバトル画面へ -->
+      <main class="container">
 
-      <!-- 1. 敵キャラの情報とヒストリーウィンドウ -->
-      <section class="battle-window">
-        <!-- 敵キャラのHPゲージ -->
-        <ul class="enemy-info">
-          <li class="name"><?php echo $_SESSION['monster']->getName(); ?></li>
-          <li class="hp"><?php echo $_SESSION['monster']->getHp().'/'.$_SESSION['monsterMaxHp']; ?></li>
-        </ul>
-        <div class="gauge ">
-          <div class="gauge gauge-remain gauge-remain-hp js-gauge-hp-enemy"></div>
-        </div>
-        <!-- 敵キャラの画像 -->
-        <img class="enemy-img" src="<?php echo $_SESSION['monster']->getImg(); ?>" style="">
-        <!-- History -->
-        <div class="history">
-          <p class="history-text"><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
-        </div>
-      </section>
-
-      <!-- 2. 操作キャラのステータス -->
-      <section class="status-window">
-        <!-- 操作キャラの画像 -->
-        <div class="fighter-face">
-          <img class="face-img" src="<?php echo $_SESSION['fighter']->getImgFace(); ?>" alt="">
-        </div>
-        <!-- 操作キャラのステータス -->
-        <div class="fighter-status">
-          <div class="">
-            <p class="nickname"><?php echo $_SESSION['fighter']->getNickname(); ?></p>
-            <h2 class="name"><?php echo $_SESSION['fighter']->getName(); ?></h2>
-          </div>
-          <div class="">
-            <p class="">残る強敵</p>
-            <p class="number"><?php echo $_SESSION['monsterNum']; ?>人</p>
-          </div>
-          <!-- 操作キャラのHPゲージ -->
-          <div class="gauge ">
-            <div class="gauge gauge-remain gauge-remain-hp js-gauge-hp">
-              <span class="number hp"><?php echo $_SESSION['fighter']->getHp().'/'.$_SESSION['fighterMaxHp']; ?></span>
-            </div>
-          <!-- 操作キャラの気力ゲージ -->
-          </div>
-          <div class="gauge ">
-            <div class="gauge gauge-remain gauge-remain-rethal js-gauge-rethal">
-              <span class="number mp"><?php echo $_SESSION['fighter']->getHp().'/'.$_SESSION['fighterMaxHp']; ?></span>
+        <!-- 0-1. 敵カットイン -->
+        <section class="cutin <?php if(getSessionFlash('encountFlg')) echo 'show'; ?>">
+          <div class="cutin-window enemy">
+            <img class="img" src="<?php echo $_SESSION['monster']->getImgFace(); ?>" alt="<?php echo $_SESSION['monster']->getName(); ?>">
+            <div class="telop">
+              <p class="nickname"><?php echo $_SESSION['monster']->getNickname(); ?></p>
+              <h2 class="name"><?php echo $_SESSION['monster']->getName(); ?></h2>
             </div>
           </div>
-          <div class="gauge_num"></div>
-          <div class="gauge_bg"><div class="gauge_main" style="width: 100%;"></div></div>
-        </div>
-      </section>
+        </section>
+        <!-- 0-2. 必殺技カットイン -->
+        <section class="cutin js-lethal-cutin">
+          <div class="cutin-window lethal">
+            <img class="img" src="<?php echo $_SESSION['fighter']->getLethalImg(); ?>" alt="<?php echo $_SESSION['fighter']->getLethal(); ?>">
+            <div class="telop">
+              <h2 class="name"><?php echo $_SESSION['fighter']->getLethal(); ?></h2>
+            </div>
+          </div>
+        </section>
 
-      <!-- 3. コマンドエリア -->
-      <section class="command-area">
-        <form class="form" method="post">
-          <input class="btn btn-active" type="submit" name="attack" value="攻撃ッ!!">
-          <input class="btn btn-active" type="submit" name="guard" value="防御ッ!!">
-          <input class="btn btn-active" type="submit" name="escape" value="退却ッ!!">
-        </form>
-      </section>
+        <!-- 1. 敵キャラの情報とヒストリーウィンドウ -->
+        <section class="battle-window stage-<?php echo $_SESSION['stageImg'] ?>">
+          <!-- 敵キャラのHPゲージ -->
+          <div class="enemy-info">
+            <div class="name"><?php echo $_SESSION['monster']->getName(); ?></div>
+            <div class="hp">
+              <span id="js-hp-remain-enemy"><?php echo $_SESSION['monster']->getHp(); ?></span>/<span id="js-hp-max-enemy"><?php echo $_SESSION['monsterMaxHp']; ?></span>
+            </div>
+          </div>
+          <div class="gauge">
+            <div class="gauge-remain gauge-remain-hp js-gauge-hp-enemy"></div>
+          </div>
+          <!-- 敵キャラの画像 -->
+          <img class="enemy-img" src="<?php echo $_SESSION['monster']->getImg(); ?>" style="">
+          <!-- 攻撃エフェクト -->
+          <div class="effect">
+            <img class="effect-attack left" src="img/attack.png">
+          </div>
+          <!-- History -->
+          <div class="history js-auto-scroll">
+            <p class="history-text"><?php echo (!empty($_SESSION['history'])) ? $_SESSION['history'] : ''; ?></p>
+          </div>
+        </section>
+
+        <!-- 2. 操作キャラのステータス -->
+        <section class="fighter-info">
+          <!-- 操作キャラの画像 -->
+          <div class="fighter-info-face js-fighter-info-face">
+            <form class="btn-command-wrapper" method="post">
+              <input class="btn btn-active btn-lethal js-btn-lethal" type="submit" name="lethal" value="必殺ッ!!">
+            </form>
+            <img class="img" src="<?php echo $_SESSION['fighter']->getImgFace(); ?>" alt="">
+          </div>
+          <!-- 操作キャラのステータス -->
+          <div class="fighter-info-status">
+            <div class="about">
+              <div class="fighter">
+                <p class="nickname"><?php echo $_SESSION['fighter']->getNickname(); ?></p>
+                <h2 class="name"><?php echo $_SESSION['fighter']->getName(); ?></h2>
+              </div>
+              <div class="record">
+                <p class="number"><?php echo $_SESSION['monsterNum']; ?><span class="unit">人</span></p>
+                <span class="index">残る強敵</span>
+              </div>
+            </div>
+
+            <!-- 操作キャラのHPゲージ -->
+            <div class="parameter">
+              <p class="index">体力</p>
+              <div class="gauge">
+                <p class="number">
+                  <span id="js-hp-remain"><?php echo $_SESSION['fighter']->getHp(); ?></span>/<span id="js-hp-max"><?php echo $_SESSION['fighterMaxHp']; ?></span>
+                <p>
+                <div class="gauge-remain gauge-remain-hp js-gauge-hp">
+                </div>
+              </div>
+            </div>
+            <!-- 操作キャラのMPゲージ -->
+            <div class="parameter">
+              <span class="index">気力</span>
+              <div class="gauge ">
+                <p class="number">
+                  <span id="js-mp-remain"><?php echo $_SESSION['fighter']->getMp(); ?></span>/<span id="js-mp-max">100</span>
+                <p>
+                  <div class="gauge-remain gauge-remain-mp js-gauge-mp">
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- 3. コマンドエリア -->
+        <section class="command-area">
+          <form class="btn-command-wrapper" method="post">
+            <input class="btn btn-active btn-command" type="submit" name="attack" value="攻撃ッ!!">
+            <input class="btn btn-active btn-command" type="submit" name="guard" value="防御ッ!!">
+            <input class="btn btn-active btn-command" type="submit" name="escape" value="退却ッ!!">
+          </form>
+        </section>
 
     <?php } ?>
 
   <footer class="footer">
-    <?php if(!empty($_SESSION)){ ?>
     <form method="post" action="">
-      <input class="link_start" type="submit" name="reset" value="<< スタート画面へ">
+      <input class="link_start" type="submit" name="reset" value="<< スタート画面に戻る">
     </form>
-    <?php } ?>
     <a class="link_anime" href="http://baki-anime.jp/" target=”_blank”>TVアニメ「バキ」公式サイトへッ!!</a>
   </footer>
 

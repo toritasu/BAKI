@@ -3,6 +3,7 @@
 // ========================
 $font-color_default: #fff;
 $font-color_dark: #1E1E1E;
+$font-color_gray: #4E4E4E;
 $font-color_red: #CC3535;
 $color_background: #333;
 $color_background_red: #CC3535;
@@ -11,9 +12,9 @@ $color_background_black: #000;
 $site_width: 800px;
 
 $font-size_default: 16px;
-$font-size_button: 20px;
+$font-size_button: 24px;
 $font-size_s: 14px;
-$font-size_m: 18px;
+$font-size_m: 20px;
 $font-size_l: 24px;
 $font-size_xl: 30px;
 $font-size_xxl: 36px;
@@ -25,6 +26,37 @@ $space_xl: 20px;
 $space_xxl: 30px;
 
 $font-family_corp: 'Noto Serif SC', serif;
+
+// ブレークポイント設定
+// @media screen and (max-width: 414px){
+//   .btn {
+//     font-size: .7em;
+//   }
+// }
+
+// 変数として設定しておくと後々変更しやすくて便利
+// $breakpoint-sm: 400px !default;
+// $breakpoint-md: 768px !default;
+// $breakpoint-lg: 100px !default;
+
+// マップ型変数を使うともっと便利
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 100px)',
+  'xl': 'screen and (max-width: 1200px)'
+) !default;
+
+// ========================
+// mixin
+// ========================
+// @mixinは関数のようなものを作れる
+// mapget()の第一引数に変数名、第二引数にマップ型のキーを渡すと、マップ型の値が返る
+@mixin mq($breakpoint: sm) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content; // 呼び出した時に書いたコード
+  }
+}
 
 // ========================
 // base
@@ -69,11 +101,13 @@ input {
 // ========================
 body {
   background-color: black;
+  scroll-behavior: smooth;
 }
 // ========================
 // container
 // ========================
 .container {
+  box-sizing: border-box;
   background-color: $color_background;
   width: $site-width;
   margin-left: auto;
@@ -81,7 +115,10 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 1200px;
+  @include mq(){
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 // ========================
@@ -90,14 +127,24 @@ body {
 .header {
   box-sizing: border-box;
   text-align: center;
-  margin-bottom: $space_m;
-  .logo {
+  padding-bottom: $space_m;
+  &-logo {
     width: auto;
     height: 150px;
     margin-bottom: $space_s;
   }
-  .title {
+  &-title {
     font-size: $font-size_xxl;
+  }
+  @include mq(){
+    height: 20vh;
+    margin-bottom: 0;
+    &-logo {
+      height: 75%;
+    }
+    &-title {
+      font-size: 6.5vw;
+    }
   }
 }
 
@@ -105,10 +152,14 @@ body {
 // View Screen
 // ========================
 .view {
-  margin-bottom: $space_xl;
   height: 300px;
+  margin-bottom: $space_xl;
   position: relative;
   overflow: hidden;
+  @include mq(){
+    height: 30%;
+    margin-bottom: $space_m;
+  }
   &-initial {
     position: absolute;
     top: 0;
@@ -126,6 +177,10 @@ body {
       transform: translate(-50%, -50%);
       z-index: 2;
       object-fit: cover;
+      @include mq() {
+        font-size: $font-size_l;
+        white-space: nowrap;
+      }
     }
     .image {
       position: absolute;
@@ -170,18 +225,41 @@ body {
         margin-right: $space_xxl;
         object-fit: cover;
       }
+      @include mq() {
+        width: 55%;
+        padding: $space_l;
+        &-nickname {
+          font-size: $font-size_s;
+          margin-bottom: $space_s;
+        }
+        &-name {
+          font-size: $font-size_xl;
+          margin-bottom: $space_m;
+        }
+        &-note {
+          font-size: $font-size_s;
+        }
+        &-face {
+          width: 50%;
+          position: absolute;
+          right: 0;
+          z-index: -1;
+          margin-right: 0;
+        }
+      }
     }
   }
 }
 
 // ========================
-// キャラ選択
+// キャラ選択パネル
 // ========================
 .panel {
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
   margin-bottom: $space_m;
+  margin-right: $space_s;
   transition: .5s;
   cursor: pointer;
   &:hover {
@@ -192,9 +270,6 @@ body {
     justify-content: center;
     height: 300px;
     margin-right: -$space_s;
-    .panel {
-      margin-right: $space_s;
-    }
   }
   &-title {
     font-size: $font-size_l;
@@ -204,12 +279,31 @@ body {
     margin-bottom: $space_l;
   }
   &-fighter {
-    width: calc(25% - #{$space_s});
+    width: calc(20% - #{$space_s});
   }
   &-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @include mq(){
+    margin-bottom: $space_s;
+    margin-right: 0;
+    &-group {
+      height: 25%;
+      margin-right: 0;
+    }
+    &-title {
+      font-size: $font-size_m;
+      margin-bottom: $space_m;
+    }
+    &-text {
+      font-size: $font-size_s;
+      margin-bottom: $space_m;
+    }
+    &-fighter {
+      width: 20%;
+    }
   }
 }
 // ========================
@@ -226,6 +320,11 @@ body {
   border-radius: 5px;
   padding: $space_l $space_xl;
   position: relative;
+  outline: none;
+  @include mq() {
+    font-size: $font-size_m;
+    padding: $space_m $space_l;
+  }
   &-inactive {
     cursor: not-allowed;
     background: -moz-radial-gradient(#DBD7D7, #717171);
@@ -241,41 +340,39 @@ body {
       animation: button 1s ease-out infinite;
     }
   }
-  &::before, &::after {
-    content: "";
+  &-command {
+    width: 25%;
+    margin-right: $space_l;
+    &:last-child {
+      margin-right: 0;
+    }
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    @include mq() {
+      width: 30%;
+      margin-right: $space_m;
+    }
+  }
+  &-lethal {
+    display: none;
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    top: 50%;
     left: 0;
-    border-radius: 5px;
-    background-color: #C85353;
-    border: 1px solid #642A2A;
-    z-index: 100;
-    transform: translate3d(0,0,0);
-  }
-  &::before {
-    animation: button 2s ease-out infinite;
-  }
-  &::after {
-    animation: button 2s ease-out 1s infinite;
+    transform: translate(0, -50%);
+    font-size: $font-size_xxl;
+    border: none;
+    background: none;
+    @include mq() {
+      font-size: $font-size_l;
+    }
   }
 }
 // ========================
 // カットイン
 // ========================
-@keyframes cutin {
-  from { opacity: 0 }
-  25% { opacity: 1; z-index: 3 }
-  90% { opacity: 1; z-index: 3 }
-  to { z-index: -1; opacity: 0 }
-}
-@keyframes cutin-enemy {
-  from { transform: translate(100%); opacity: 0 }
-  15% { transform: translate(0); opacity: 1 }
-  90% { transform: translate(0); opacity: 1 }
-  to { transform: translate(-100%); opacity: 0; }
-}
 .cutin {
   z-index: -1; // display:noneの設定は難しいので
   position: absolute;
@@ -287,19 +384,26 @@ body {
   &.show { // getSessionFlashの結果がtrue（＝エンカウント時のターン）のみPHPで付与されるクラス
     animation: cutin 2s ease-out;
   }
-  &-enemy {
-    transform: translate(100%);
-    animation: cutin-enemy 2s ease-out;
+  &-window {
     position: absolute;
     top: 100px;
     left: 0;
     width: 100%;
-    background-color: $color_background_red;
     .img {
       height: 500px;
       object-fit: contain;
       object-position: 50% -50%;
       z-index: 2;
+    }
+    &.enemy {
+      background-color: $color_background_red;
+      transform: translate(100%);
+      animation: cutin-window 2s ease-out;
+    }
+    &.lethal {
+      background: -moz-radial-gradient(#69FF2A, #155419);
+      background: -webkit-radial-gradient(#69FF2A, #155419);
+      background: radial-gradient(#69FF2A, #155419);
     }
     .telop {
       color: $font-color_red;
@@ -313,41 +417,65 @@ body {
         font-size: $font-size_xxl;
       }
     }
+    @include mq() {
+      bottom: 35%;
+      .img {
+        height: auto;
+      }
+      .telop {
+        .nickname {
+          font-size: $font-size_m;
+          margin-bottom: $space_m;
+        }
+        .name {
+          font-size: $font-size_xl;
+        }
+      }
+    }
   }
 }
-// ========================
-// ゲージひな形
-// ========================
-.gauge {
-  width: 100%;
-  height: 20px;
-  background-color: #fff;
-  border: 3px solid #DADADA;
-  border-radius: 20px;
-  &-remain {
-    width: calc(100% - 2px);
-    height: calc(100% - 2px);
-    border: 1px solid #707070;
-    &-hp {
-      background: -moz-linear-gradient(#F8F080, #B8AF3C);
-      background: -webkit-linear-gradient(#F8F080, #B8AF3C);
-      background: linear-gradient(#F8F080, #B8AF3C);
-    }
-    &-rethal {
-      background: -moz-linear-gradient(#45DF34, #D8FFD2);
-      background: -webkit-linear-gradient(#45DF34, #D8FFD2);
-      background: linear-gradient(#45DF34, #D8FFD2);
-    }
-  }
+@keyframes cutin {
+  from { opacity: 0 }
+  15% { opacity: 1; z-index: 3 }
+  90% { opacity: 1; z-index: 3 }
+  to { z-index: -1; opacity: 0 }
+}
+@keyframes cutin-window {
+  from { transform: translate(100%); opacity: 0 }
+  15% { transform: translate(0); opacity: 1 }
+  90% { transform: translate(0); opacity: 1 }
+  to { transform: translate(-100%); opacity: 0; }
 }
 // ========================
 // 敵キャラ情報
 // ========================
 .battle-window {
   height: 700px;
+  background-size: cover;
   position: relative;
-  padding-left: $space_l;
-  padding-right: $space_l;
+  padding: 0 $space_l;
+  overflow: hidden;
+  @include mq() {
+    height: 65%;
+    padding: 0 $space_s;
+  }
+  // 背景のぼかし
+  &::before {
+    content: '';
+    filter: blur(2px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &.stage-1::before { background-image: url("../img/background01.jpg"); }
+  &.stage-2::before { background-image: url("../img/background02.jpg"); }
+  &.stage-3::before { background-image: url("../img/background03.jpg"); }
+  &.stage-4::before { background-image: url("../img/background04.jpg"); }
+  &.stage-5::before { background-image: url("../img/background05.jpg"); }
+  &.stage-6::before { background-image: url("../img/background06.jpg"); }
+
   .enemy-info {
     display: flex;
     justify-content: space-between;
@@ -356,6 +484,10 @@ body {
     .name, .hp {
       display: block;
       font-size: $font-size_l;
+      filter: drop-shadow(2px 2px 2px #000);
+      @include mq() {
+      font-size: $font-size_s;
+      }
     }
   }
   .enemy-img {
@@ -364,9 +496,16 @@ body {
     left: 0;
     position: absolute;
     object-fit: contain;
+    filter: drop-shadow(5px 5px 5px #000);
+    &.damaged {
+      animation: damaged .1s ease-out .3s 5;
+    }
+    &.beaten {
+      animation: beaten .5s ease-out;
+    }
   }
   .history {
-    height: 150px;
+    height: 180px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -376,8 +515,7 @@ body {
     background: linear-gradient(#B6B4B4, #5B5A5A);
     border: 3px solid #DADADA;
     border-radius: 5px;
-    margin-left: $space_l;
-    margin-right: $space_l;
+    margin: 0 $space_l;
     padding: $space_m;
     overflow-y: scroll;
     &-text {
@@ -385,40 +523,215 @@ body {
       line-height: $font-size_m * 1.5;
       text-align: left;
     }
+    @include mq() {
+      height: 18%;
+      margin-left: $space_s;
+      margin-right: $space_s;
+      padding: $space_s;
+      &-text {
+        font-size: $font-size_s;
+        line-height: $font-size_default * 1.2;
+      }
+    }
   }
 }
-
+@keyframes damaged {
+  0% {transform: translate(0px, 0px) rotateZ(0deg)}
+  25% {transform: translate(2px, 2px) rotateZ(1deg)}
+  50% {transform: translate(0px, 2px) rotateZ(0deg)}
+  75% {transform: translate(2px, 0px) rotateZ(-1deg); opacity: .7}
+  100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+@keyframes beaten {
+  from {transform: translate(0, 0)}
+  to {transform: translate(0, 100%)}
+}
+// ========================
+// ゲージひな形
+// ========================
+.gauge {
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 5px solid #DADADA;
+  border-radius: 20px;
+  position: relative;
+  @include mq() {
+    height: 20px;
+    border: 3px solid #DADADA;
+  }
+  &-remain {
+    box-sizing: border-box;
+    height: 100%;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    &-hp {
+      background: -moz-linear-gradient(90deg, #F8F080, #B8AF3C);
+      background: -webkit-linear-gradient(90deg, #F8F080, #B8AF3C);
+      background: linear-gradient(90deg, #F8F080, #B8AF3C);
+      &.pinch {
+        background: -moz-linear-gradient(90deg, #FEB9AE, #FF2300);
+        background: -webkit-linear-gradient(90deg, #FEB9AE, #FF2300);
+        background: linear-gradient(90deg, #FEB9AE, #FF2300);
+      }
+    }
+    &-mp {
+      background: -moz-linear-gradient(90deg, #45DF34, #D8FFD2);
+      background: -webkit-linear-gradient(90deg, #45DF34, #D8FFD2);
+      background: linear-gradient(90deg, #45DF34, #D8FFD2);
+    }
+  }
+  .number {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: $font-size_l;
+    color: $font-color_gray;
+    z-index: 2;
+    @include mq() {
+      font-size: $font-size_s;
+    }
+  }
+}
 // ========================
 // ステータス画面
 // ========================
-.status-window {
+.fighter-info {
+  height: 18%;
   display: flex;
   justify-content: space-between;
-  padding: $space_l;
-  .fighter-face {
-    width: 35%;
+  padding: $space_xl;
+  @include mq() {
+    padding: $space_s;
   }
-  .fighter-status {
-    width: 65%;
+  &-face {
+    width: 30%;
+    position: relative;
+    &.limit-break {
+      background: -moz-radial-gradient(#69FF2A, #155419);
+      background: -webkit-radial-gradient(#69FF2A, #155419);
+      background: radial-gradient(#69FF2A, #155419);
+    }
   }
+  &-status {
+    width: 70%;
+    padding-left: $space_l;
+    .about {
+      display: flex;
+      justify-content: space-between;
+      height: 60%;
+      .fighter {
+        text-align: left;
+        .nickname {
+          font-size: $font-size_l;
+          margin-bottom: $space_s;
+        }
+        .name {
+          font-size: $font-size_xxl;
+        }
+      }
+      .record {
+        .number {
+          font-size: $font-size_xxl;
+          margin-bottom: $space_s;
+        }
+        .index {
+          font-size: $font-size_m;
+        }
+      }
+      @include mq() {
+        .fighter {
+          .nickname {
+            font-size: $font-size_s;
+            margin-bottom: $space_s;
+          }
+          .name {
+            font-size: $font-size_l;
+          }
+        }
+        .record {
+          .number {
+            font-size: $font-size_xl;
+            .unit { font-size: $font-size_l;}
+          }
+          .index {
+            font-size: $font-size_s;
+          }
+        }
+      }
+    }
+    .parameter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      margin-bottom: $space_l;
+      .index {
+        width: 20%;
+        font-size: $font-size_xl;
+      }
+    }
+    @include mq() {
+      .parameter {
+        margin-bottom: $space_s;
+        .index {
+          text-align: left;
+          width: 25%;
+          font-size: $font-size_m;
+        }
+      }
+    }
+  }
+}
+// ========================
+// エフェクト
+// ========================
+.effect-attack {
+  position: absolute;
+  width: 100px;
+  opacity: 0;
+  filter: blur(2px);
+  transition: .3s;
+  &.left {
+    top: 50%;
+    left: 10%;
+    transform: rotate(-160deg);
+    &.attacked {
+      transform: translate(300%, -150%) scale3d(2, 2, 2) rotate(20deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
 }
 // ========================
 // フッター
 // ========================
 .footer {
-  height: 80px;
-  position: relative;
+  width: 100%;
+  height: 100px;
+  text-align: center;
   .link_anime {
+    font-size: $font-size_m;
     display: block;
     position: absolute;
+    bottom: $space_s;
     left: 50%;
-    bottom: $space_m;
     transform: translate(-50%);
   }
   .link_start {
-    top: $space_m;
-    &::before {
-      border: 1px solid $font-color_red;
+    font-size: $font-size_m;
+    margin-top: $space_m;
+  }
+  @include mq(){
+    height: 8%;
+    .link_anime {
+      font-size: $font-size_s;
+      white-space: nowrap;
+    }
+    .link_start {
+      font-size: $font-size_s;
     }
   }
 }
