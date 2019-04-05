@@ -2,10 +2,15 @@ html, body {
   width: 100%;
   color: #fff;
   font-size: 16px;
-  font-family: "Noto Serif SC", serif; }
+  font-family: "Noto Serif SC", serif;
+  scroll-behavior: auto; }
 
 p, a {
   -webkit-font-smoothing: antialiased; }
+
+.congratulations {
+  font-size: 4vw;
+  padding: 24px; }
 
 a {
   color: #CC3535;
@@ -31,10 +36,30 @@ body {
   background-color: black;
   scroll-behavior: smooth; }
 
+.fade {
+  display: none;
+  width: 800px;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 3; }
+  @media screen and (max-width: 414px) {
+    .fade {
+      width: 100%; } }
+  .fade .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 .container {
   box-sizing: border-box;
   background-color: #333;
-  width: 800px;
+  max-width: 800px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -42,8 +67,7 @@ body {
   overflow: hidden; }
   @media screen and (max-width: 414px) {
     .container {
-      width: 100%;
-      height: 100vh; } }
+      width: 100%; } }
 
 .header {
   box-sizing: border-box;
@@ -57,7 +81,7 @@ body {
     font-size: 36px; }
   @media screen and (max-width: 414px) {
     .header {
-      height: 20vh;
+      height: 17%;
       margin-bottom: 0; }
       .header-logo {
         height: 75%; }
@@ -65,13 +89,12 @@ body {
         font-size: 6.5vw; } }
 
 .view {
-  height: 300px;
+  height: 28%;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden; }
   @media screen and (max-width: 414px) {
     .view {
-      height: 30%;
       margin-bottom: 10px; } }
   .view-initial {
     position: absolute;
@@ -114,6 +137,7 @@ body {
     display: flex;
     justify-content: space-between; }
     .view-selection .character {
+      width: 55%;
       color: #1E1E1E;
       text-align: left;
       padding: 30px; }
@@ -127,27 +151,30 @@ body {
         font-size: 16px;
         line-height: 20px; }
       .view-selection .character-face {
-        width: 300px;
         height: 100%;
-        margin-right: 30px;
-        object-fit: cover; }
+        object-fit: cover;
+        z-index: -1;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        margin-right: 0; }
       @media screen and (max-width: 414px) {
         .view-selection .character {
           width: 55%;
-          padding: 15px; }
+          padding: 10px; }
           .view-selection .character-nickname {
-            font-size: 14px;
+            font-size: 4vw;
             margin-bottom: 5px; }
           .view-selection .character-name {
-            font-size: 30px;
+            font-size: 10vw;
             margin-bottom: 10px; }
           .view-selection .character-note {
-            font-size: 14px; }
+            font-size: 3.5vw;
+            line-height: 1.3em; }
           .view-selection .character-face {
             width: 50%;
             position: absolute;
             right: 0;
-            z-index: -1;
             margin-right: 0; } }
 
 .panel {
@@ -163,7 +190,7 @@ body {
   .panel-group {
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 25%;
     margin-right: -5px; }
   .panel-title {
     font-size: 24px;
@@ -184,10 +211,10 @@ body {
         height: 25%;
         margin-right: 0; }
       .panel-title {
-        font-size: 20px;
+        font-size: 6vw;
         margin-bottom: 10px; }
       .panel-text {
-        font-size: 14px;
+        font-size: 4vw;
         margin-bottom: 10px; }
       .panel-fighter {
         width: 20%; } }
@@ -207,7 +234,7 @@ body {
   outline: none; }
   @media screen and (max-width: 414px) {
     .btn {
-      font-size: 20px;
+      font-size: 6vw;
       padding: 10px 15px; } }
   .btn-inactive {
     cursor: not-allowed;
@@ -221,6 +248,8 @@ body {
     background: radial-gradient(#C85353, #642A2A); }
     .btn-active.animated {
       animation: button 1s ease-out infinite; }
+  .btn-start {
+    padding: 10px 15px; }
   .btn-command {
     width: 25%;
     margin-right: 15px; }
@@ -232,7 +261,7 @@ body {
     @media screen and (max-width: 414px) {
       .btn-command {
         width: 30%;
-        margin-right: 10px; } }
+        margin-right: 5px; } }
   .btn-lethal {
     display: none;
     position: absolute;
@@ -259,11 +288,11 @@ body {
     animation: cutin 2s ease-out; }
   .cutin-window {
     position: absolute;
-    top: 100px;
-    left: 0;
-    width: 100%; }
+    bottom: 35%;
+    width: 100%;
+    height: 55%; }
     .cutin-window .img {
-      height: 500px;
+      height: 100%;
       object-fit: contain;
       object-position: 50% -50%;
       z-index: 2; }
@@ -274,7 +303,8 @@ body {
     .cutin-window.lethal {
       background: -moz-radial-gradient(#69FF2A, #155419);
       background: -webkit-radial-gradient(#69FF2A, #155419);
-      background: radial-gradient(#69FF2A, #155419); }
+      background: radial-gradient(#69FF2A, #155419);
+      height: auto; }
     .cutin-window .telop {
       color: #CC3535;
       background-color: #000;
@@ -288,12 +318,17 @@ body {
       .cutin-window {
         bottom: 35%; }
         .cutin-window .img {
-          height: auto; }
-        .cutin-window .telop .nickname {
-          font-size: 20px;
-          margin-bottom: 10px; }
-        .cutin-window .telop .name {
-          font-size: 30px; } }
+          height: 80%; }
+          .cutin-window .img.lethal {
+            height: 100%;
+            object-fit: contain; }
+        .cutin-window .telop {
+          padding: 10px; }
+          .cutin-window .telop .nickname {
+            font-size: 5vw;
+            margin-bottom: 10px; }
+          .cutin-window .telop .name {
+            font-size: 8vw; } }
 
 @keyframes cutin {
   from {
@@ -323,14 +358,13 @@ body {
     opacity: 0; } }
 
 .battle-window {
-  height: 700px;
+  height: 60%;
   background-size: cover;
   position: relative;
   padding: 0 15px;
   overflow: hidden; }
   @media screen and (max-width: 414px) {
     .battle-window {
-      height: 65%;
       padding: 0 5px; } }
   .battle-window::before {
     content: '';
@@ -376,7 +410,7 @@ body {
     .battle-window .enemy-img.beaten {
       animation: beaten .5s ease-out; }
   .battle-window .history {
-    height: 180px;
+    height: 25%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -395,13 +429,13 @@ body {
       text-align: left; }
     @media screen and (max-width: 414px) {
       .battle-window .history {
-        height: 18%;
+        height: 5em;
         margin-left: 5px;
         margin-right: 5px;
         padding: 5px; }
         .battle-window .history-text {
-          font-size: 14px;
-          line-height: 19.2px; } }
+          font-size: 4vw;
+          line-height: 1.3em; } }
 
 @keyframes damaged {
   0% {
@@ -472,18 +506,28 @@ body {
       padding: 5px; } }
   .fighter-info-face {
     width: 30%;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
+    .fighter-info-face .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
     .fighter-info-face.limit-break {
       background: -moz-radial-gradient(#69FF2A, #155419);
       background: -webkit-radial-gradient(#69FF2A, #155419);
       background: radial-gradient(#69FF2A, #155419); }
   .fighter-info-status {
     width: 70%;
-    padding-left: 15px; }
+    margin-left: 5px; }
     .fighter-info-status .about {
       display: flex;
       justify-content: space-between;
       height: 60%; }
+      @media screen and (max-width: 414px) {
+        .fighter-info-status .about {
+          height: auto;
+          padding-bottom: 5px; } }
       .fighter-info-status .about .fighter {
         text-align: left; }
         .fighter-info-status .about .fighter .nickname {
@@ -498,20 +542,22 @@ body {
         font-size: 20px; }
       @media screen and (max-width: 414px) {
         .fighter-info-status .about .fighter .nickname {
-          font-size: 14px;
+          font-size: 4vw;
           margin-bottom: 5px; }
         .fighter-info-status .about .fighter .name {
-          font-size: 24px; }
+          font-size: 7vw; }
         .fighter-info-status .about .record .number {
-          font-size: 30px; }
+          font-size: 10vw;
+          margin-bottom: 0; }
           .fighter-info-status .about .record .number .unit {
-            font-size: 24px; }
+            font-size: 5vw; }
         .fighter-info-status .about .record .index {
-          font-size: 14px; } }
+          font-size: 4vw; } }
     .fighter-info-status .parameter {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      text-align: left;
       position: relative;
       margin-bottom: 15px; }
       .fighter-info-status .parameter .index {
@@ -521,29 +567,42 @@ body {
       .fighter-info-status .parameter {
         margin-bottom: 5px; }
         .fighter-info-status .parameter .index {
-          text-align: left;
-          width: 25%;
-          font-size: 20px; } }
+          font-size: 5vw; } }
 
 .effect-attack {
   position: absolute;
-  width: 100px;
+  width: 30%;
+  top: 40%;
+  left: 50%;
   opacity: 0;
-  filter: blur(2px);
-  transition: .3s; }
-  .effect-attack.left {
-    top: 50%;
-    left: 10%;
-    transform: rotate(-160deg); }
-    .effect-attack.left.attacked {
-      transform: translate(300%, -150%) scale3d(2, 2, 2) rotate(20deg);
-      filter: blur(0);
-      opacity: 1; }
+  transform: translate(-50%, -50%) rotate(-150deg);
+  filter: blur(2px); }
+  .effect-attack.attacked {
+    animation: punch .3s ease-out; }
+
+@keyframes punch {
+  from {
+    transform: translate(-50%, -50%) scale3d(1, 1, 1) rotate(-150deg);
+    filter: blur(2px);
+    opacity: 0; }
+  60% {
+    transform: translate(-50%, -50%) scale3d(1.2, 1.2, 1.2) rotate(-30deg);
+    filter: blur(1px);
+    opacity: 0.9; }
+  70% {
+    transform: translate(-50%, -50%) scale3d(2, 2, 2);
+    filter: blur(0);
+    opacity: 1; }
+  to {
+    transform: translate(-50%, -50%) scale3d(2, 2, 2);
+    filter: blur(0);
+    opacity: 1; } }
 
 .footer {
   width: 100%;
-  height: 100px;
-  text-align: center; }
+  height: 8%;
+  text-align: center;
+  position: relative; }
   .footer .link_anime {
     font-size: 20px;
     display: block;
@@ -553,12 +612,16 @@ body {
     transform: translate(-50%); }
   .footer .link_start {
     font-size: 20px;
-    margin-top: 10px; }
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%); }
   @media screen and (max-width: 414px) {
     .footer {
       height: 8%; }
       .footer .link_anime {
-        font-size: 14px;
+        font-size: 4vw;
         white-space: nowrap; }
       .footer .link_start {
-        font-size: 14px; } }
+        font-size: 4vw;
+        top: 5px; } }

@@ -1,5 +1,14 @@
-$(function(){
+$('head').append(
+  '<style type="text/css">.container { display: none; } .fade, .loader { display: block }'
+);
 
+$(window).on('load', function(){
+  $('.fade').delay(900).fadeOut(800);
+  $('.loader').delay(600).fadeOut(300);
+  $('.container').css("display", "block");
+});
+
+$(function(){
   // 1. キャラ選択画面
   $('input[name=fighter]:radio').change(function(){
     var radioval = $(this).val();

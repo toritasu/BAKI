@@ -24,11 +24,22 @@
       <?php }elseif($_SESSION['clear']) { ?>
     <!--clear変数があればゲームクリア画面へ -->
         <img src="img/clear.jpg" style="width:100%;">
+        <p class="congratulations">
+          遊んでくれてありがとう！<br>
+          このパスワードをDMしてくれた方に先着１名でAmazonギフト券1000円分をプレゼント！<br><br>
+          5n7i9vgidx92
+        </p>
     <?php $_SESSION = array(); } ?>
 
       <!-- セッション変数が空ならキャラクター選択画面へ -->
     <?php }elseif(empty($_SESSION)){ ?>
-      <main class="container">
+      <!-- ローディング画面 -->
+      <div class="fade">
+        <div class="loader">
+          <img src="img/loading.gif" alt="Now Loading..." width="80px" height="80px">
+        </div>
+      </div>
+      <main class="container" style="display:none">
         <header class="header">
           <img class="header-logo" src="img/logo.png" alt="刃牙ロゴ">
           <h1 class="header-title">地下格闘場戦士 VS 最凶死刑囚</h1>
@@ -64,7 +75,7 @@
               </label>
             <?php endforeach ?>
             </div>
-            <input class="btn btn-inactive js-btn-prohibit" type="submit" name="start" value="選べッ!!" disabled="disabled">
+            <input class="btn btn-start btn-inactive js-btn-prohibit" type="submit" name="start" value="選べッ!!" disabled="disabled">
           </form>
         </section>
 
@@ -121,7 +132,7 @@
           <!-- 操作キャラの画像 -->
           <div class="fighter-info-face js-fighter-info-face">
             <form class="btn-command-wrapper" method="post">
-              <input class="btn btn-active btn-lethal js-btn-lethal" type="submit" name="lethal" value="必殺ッ!!">
+              <input class="btn btn-active btn-lethal js-btn-lethal" type="submit" name="lethal" value="必殺!!">
             </form>
             <img class="img" src="<?php echo $_SESSION['fighter']->getImgFace(); ?>" alt="">
           </div>
@@ -165,9 +176,9 @@
         <!-- 3. コマンドエリア -->
         <section class="command-area">
           <form class="btn-command-wrapper" method="post">
-            <input class="btn btn-active btn-command" type="submit" name="attack" value="攻撃ッ!!">
-            <input class="btn btn-active btn-command" type="submit" name="guard" value="防御ッ!!">
-            <input class="btn btn-active btn-command" type="submit" name="escape" value="退却ッ!!">
+            <input class="btn btn-active btn-command" type="submit" name="attack" value="攻撃">
+            <input class="btn btn-active btn-command" type="submit" name="guard" value="防御">
+            <input class="btn btn-active btn-command" type="submit" name="escape" value="逃げる">
           </form>
         </section>
 
@@ -182,7 +193,7 @@
 
   </main>
   <script
-    src="http://code.jquery.com/jquery-3.3.1.js"
+    src="//code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
   <script src="js/app.js"></script>
