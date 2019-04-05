@@ -73,11 +73,6 @@ p, a {
   -webkit-font-smoothing: antialiased;
 }
 
-.congratulations {
-  font-size: 4vw;
-  padding: $font-size_l;
-}
-
 a {
   color: $font-color_red;
   text-decoration: none;
@@ -132,6 +127,20 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+
+// ========================
+// 特別メッセージ
+// ========================
+.congratulations {
+  font-size: 28px;
+  line-height: 1.4em;
+  padding: 50px;
+  @include mq() {
+    font-size: 4vw;
+    padding: $font-size_l
+  }
+}
+
 // ========================
 // container
 // ========================
@@ -415,13 +424,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .8);
   &.show { // getSessionFlashの結果がtrue（＝エンカウント時のターン）のみPHPで付与されるクラス
     animation: cutin 2s ease-out;
   }
   &-window {
     position: absolute;
-    bottom: 35%;
+    bottom: 40%;
     width: 100%;
     height: 55%;
     .img {
@@ -454,7 +463,6 @@ body {
       }
     }
     @include mq() {
-      bottom: 35%;
       .img {
         height: 80%;
         &.lethal {
@@ -508,6 +516,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    background-size: cover;
+    background-position: center;
   }
   &.stage-1::before { background-image: url("../img/background01.jpg"); }
   &.stage-2::before { background-image: url("../img/background02.jpg"); }

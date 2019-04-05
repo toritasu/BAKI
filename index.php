@@ -26,8 +26,10 @@
         <img src="img/clear.jpg" style="width:100%;">
         <p class="congratulations">
           遊んでくれてありがとう！<br>
-          このパスワードをDMしてくれた方に先着１名でAmazonギフト券1000円分をプレゼント！<br><br>
-          5n7i9vgidx92
+          合言葉をDMしてくれた方に先着１名で<br>
+          Amazonギフト券1000円分をプレゼント！<br><br>
+          合言葉<br>
+          <span style="color:#CC3535;">力みなくして解放のカタルシスはありえねェ・・・</span>
         </p>
     <?php $_SESSION = array(); } ?>
 

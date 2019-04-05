@@ -8,10 +8,6 @@ html, body {
 p, a {
   -webkit-font-smoothing: antialiased; }
 
-.congratulations {
-  font-size: 4vw;
-  padding: 24px; }
-
 a {
   color: #CC3535;
   text-decoration: none;
@@ -54,6 +50,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+
+.congratulations {
+  font-size: 28px;
+  line-height: 1.4em;
+  padding: 50px; }
+  @media screen and (max-width: 414px) {
+    .congratulations {
+      font-size: 4vw;
+      padding: 24px; } }
 
 .container {
   box-sizing: border-box;
@@ -283,12 +288,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.8); }
   .cutin.show {
     animation: cutin 2s ease-out; }
   .cutin-window {
     position: absolute;
-    bottom: 35%;
+    bottom: 40%;
     width: 100%;
     height: 55%; }
     .cutin-window .img {
@@ -315,20 +320,18 @@ body {
       .cutin-window .telop .name {
         font-size: 36px; }
     @media screen and (max-width: 414px) {
-      .cutin-window {
-        bottom: 35%; }
-        .cutin-window .img {
-          height: 80%; }
-          .cutin-window .img.lethal {
-            height: 100%;
-            object-fit: contain; }
-        .cutin-window .telop {
-          padding: 10px; }
-          .cutin-window .telop .nickname {
-            font-size: 5vw;
-            margin-bottom: 10px; }
-          .cutin-window .telop .name {
-            font-size: 8vw; } }
+      .cutin-window .img {
+        height: 80%; }
+        .cutin-window .img.lethal {
+          height: 100%;
+          object-fit: contain; }
+      .cutin-window .telop {
+        padding: 10px; }
+        .cutin-window .telop .nickname {
+          font-size: 5vw;
+          margin-bottom: 10px; }
+        .cutin-window .telop .name {
+          font-size: 8vw; } }
 
 @keyframes cutin {
   from {
@@ -373,7 +376,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0; }
+    bottom: 0;
+    background-size: cover;
+    background-position: center; }
   .battle-window.stage-1::before {
     background-image: url("../img/background01.jpg"); }
   .battle-window.stage-2::before {
