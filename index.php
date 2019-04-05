@@ -26,7 +26,7 @@
         <img src="img/clear.jpg" style="width:100%;">
         <p class="congratulations">
           遊んでくれてありがとう！<br>
-          合言葉をDMしてくれた方に先着１名で<br>
+          合言葉をリプしてくれた方に先着１名で<br>
           Amazonギフト券1000円分をプレゼント！<br><br>
           合言葉<br>
           <span style="color:#CC3535;">力みなくして解放のカタルシスはありえねェ・・・</span>
@@ -55,12 +55,16 @@
           </div>
           <!-- 選択したグラップラーの詳細を表示する -->
           <div class="view-selection js-view-character">
-            <div class="character">
-              <p class="character-nickname js-character-nickname"></p>
-              <h2 class="character-name js-character-name"></h2>
-              <p class="character-note js-character-description"></p>
-            </div>
-            <img class="character-face js-character-face" src="" alt="">
+            <?php foreach($fighters as $key => $val): ?>
+              <div class="character">
+                <div class="character-info">
+                  <p class="character-info-nickname"><?php echo $val->getNickname(); ?></p>
+                  <h2 class="character-info-name"><?php echo $val->getName(); ?></h2>
+                  <p class="character-info-note"><?php echo $val->getDescription(); ?></p>
+                </div>
+                <img class="character-face" src="<?php echo $val->getImgFace(); ?>" alt="<?php echo $val->getNameShort(); ?>">
+              </div>
+            <?php endforeach ?>
           </div>
         </section>
 

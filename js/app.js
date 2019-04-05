@@ -11,7 +11,13 @@ $(window).on('load', function(){
 $(function(){
   // 1. キャラ選択画面
   $('input[name=fighter]:radio').change(function(){
-    var radioval = $(this).val();
+    var radioval = $(this).val(),
+        widthPx = $('.container').innerWidth(),
+        shiftPx = radioval * widthPx;
+        console.log(radioval);
+        console.log(widthPx);
+        console.log(shiftPx);
+
 
     // いずれかのキャラが選択されたらボタンを活性化する
     $('.js-view-initial').hide();
@@ -19,20 +25,24 @@ $(function(){
                          .addClass('btn-active animated')
                          .val('肉宴開幕ッ!!')
                          .prop('disabled', false);
+    // 選択したグラップラーに応じてキャラ詳細をスライド
+    $('.js-view-character').css('transform', 'translateX(' + -shiftPx + 'px)');
+
+    // ※旧技術（読み込みが遅いことが判明したので没）
     // Ajax通信で選択されたキャラの情報を取り出す
-    $.ajax({
-      type: "POST",
-      url: "ajax.php",
-      datatype: 'json',
-      data: { key : radioval }
-    }).done(function(data){
-      console.log('ajax通信しました');
-      console.log(data);
-      $('.js-character-name').text(data.name);
-      $('.js-character-nickname').text(data.nickname);
-      $('.js-character-description').text(data.description);
-      $('.js-character-face').prop('src', data.imgSrc);
-    });
+    // $.ajax({
+    //   type: "POST",
+    //   url: "ajax.php",
+    //   datatype: 'json',
+    //   data: { key : radioval }
+    // }).done(function(data){
+    //   console.log('ajax通信しました');
+    //   console.log(data);
+    //   $('.js-character-name').text(data.name);
+    //   $('.js-character-nickname').text(data.nickname);
+    //   $('.js-character-description').text(data.description);
+    //   $('.js-character-face').prop('src', data.imgSrc);
+    // });
 
   });
 

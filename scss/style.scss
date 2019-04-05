@@ -233,60 +233,59 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 500%;
     height: 100%;
     z-index: 1;
     background-image: url("../img/character_cutin.gif");
     background-size: cover;
-    display: flex;
-    justify-content: space-between;
+    transition: .3s;
     .character {
-      width: 55%;
+      float: left;
+      width: 20%;
+      height: 100%;
       color: $font-color_dark;
-      text-align: left;
-      padding: $space_xxl;
-      &-nickname {
-        font-size: $font-size_l;
-        margin-bottom: $space_m;
-      }
-      &-name {
-        font-size: $font-size_xxl;
-        margin-bottom: $space_l;
-      }
-      &-note {
-        font-size: $font-size_default;
-        line-height: $font-size_default + 4px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      &-info {
+        width: 55%;
+        text-align: left;
+        padding: $space_xxl;
+        &-nickname {
+          font-size: $font-size_l;
+          margin-bottom: $space_m;
+        }
+        &-name {
+          font-size: $font-size_xxl;
+          margin-bottom: $space_l;
+        }
+        &-note {
+          font-size: $font-size_m;
+          line-height: 1.4em;
+        }
+        @include mq() {
+          padding: $space_m;
+          &-nickname {
+            font-size: 4vw;
+            margin-bottom: $space_s;
+          }
+          &-name {
+            font-size: 10vw;
+            margin-bottom: $space_m;
+          }
+          &-note {
+            font-size: 3.5vw;
+          }
+        }
       }
       &-face {
+        width: 50%;
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        width: 50%;
         position: absolute;
         right: 0;
         margin-right: 0;
-      }
-      @include mq() {
-        width: 55%;
-        padding: $space_m;
-        &-nickname {
-          font-size: 4vw;
-          margin-bottom: $space_s;
-        }
-        &-name {
-          font-size: 10vw;
-          margin-bottom: $space_m;
-        }
-        &-note {
-          font-size: 3.5vw;
-          line-height: 1.3em;
-        }
-        &-face {
-          width: 50%;
-          position: absolute;
-          right: 0;
-          margin-right: 0;
-        }
       }
     }
   }

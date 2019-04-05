@@ -215,10 +215,10 @@ class History implements HistoryInterface{
 
 // インスタンス生成
 $fighters[] = new Fighter( '範馬 刃牙', '刃牙', '地下格闘場チャンピオン', '数多の死闘をくぐり抜け、齢十八になったばかりの地下闘技場チャンピオン。地上最強の父親を越えるべく激闘の日々を続けている。', 500, 'img/fighter01.png', 'img/fighter01_face.png', 30, 100, 3, Tension::MAJI, '闘いとセックスは似ているッ!!', 'img/fighter01_lethal.jpg', 300);
-$fighters[] = new Fighter( '花山 薫', '花山', '伝説の喧嘩師', '15歳にして花山組2代目を襲名した日本一の喧嘩師常人離れの握力を誇り、素手喧嘩（ステゴロ）をモットーとしている。', 550, 'img/fighter02.png', 'img/fighter02_face.png', 0, 1500, 9, Tension::MAJI, '握撃', 'img/fighter02_lethal_2.jpg', 250);
-$fighters[] = new Fighter( '愚地 独歩', '独歩', '武神', '実戦空手神心会の創始者で、人食い愚地の異名を取る。かつてはシベリアトラを素手で屠ったことも。', 450, 'img/fighter03.png', 'img/fighter03_face.png', 30, 80, 4, Tension::MAJI, 'ないほうの手で殴ったァーーッ', 'img/fighter03_lethal.jpg', 300);
-$fighters[] = new Fighter( '烈 海王', '烈', '中国4000年が誇る拳雄', '中国武術界における高位の称号海王を名に持つ拳雄。4000年を誇る中国拳法の歴史においてNo.1といわれる天才。', 500, 'img/fighter04.png', 'img/fighter04_face.png', 70, 80, 5, Tension::BOKE, '救命阿（ジュウミンア）', 'img/fighter04_lethal.jpg', 0);
-$fighters[] = new Fighter( '渋川 剛気', '渋川', '生きる伝説', '小柄で老齢ながら武の体現の名に恥じない渋川流合気柔術の達人。合気を実戦レベルまで高めたとして生きる伝説とも呼ばれる。', 350, 'img/fighter05.png', 'img/fighter05_face.png', 20, 90, 1.5, Tension::MAJI, '真の護身', 'img/fighter05_lethal.jpg', 5000);
+$fighters[] = new Fighter( '花山 薫', '花山', '伝説の喧嘩師', '15歳にして花山組2代目を襲名した日本一の喧嘩師常人離れの握力を誇り、素手喧嘩（ステゴロ）をモットーとしている。', 550, 'img/fighter02.png', 'img/fighter02_face.png', 0, 150, 9, Tension::MAJI, '握撃', 'img/fighter02_lethal_2.jpg', 250);
+$fighters[] = new Fighter( '愚地 独歩', '独歩', '武神', '実戦空手神心会の創始者で、『人食い愚地』の異名を取る。かつてはシベリアトラを素手で屠ったことも。', 450, 'img/fighter03.png', 'img/fighter03_face.png', 30, 80, 4, Tension::MAJI, 'ないほうの手で殴ったァーーッ', 'img/fighter03_lethal.jpg', 300);
+$fighters[] = new Fighter( '烈 海王', '烈', '中国4000年が誇る拳雄', '中国武術界における高位の称号海王を名に持つ拳雄。4000年を誇る中国拳法の歴史においてNo.1といわれる天才。', 500, 'img/fighter04.png', 'img/fighter04_face.png', 60, 100, 5, Tension::BOKE, '救命阿（ジュウミンア）', 'img/fighter04_lethal.jpg', 0);
+$fighters[] = new Fighter( '渋川 剛気', '渋川', '生きる伝説', '小柄で老齢ながら武の体現の名に恥じない渋川流合気柔術の達人。合気を実戦レベルまで高めたとして、生きる伝説とも呼ばれる。', 350, 'img/fighter05.png', 'img/fighter05_face.png', 20, 90, 1.5, Tension::MAJI, '真の護身', 'img/fighter05_lethal.jpg', 5000);
 
 $monsters[] = new WeponMonster( 'ドリアン', 'ドリアン', '卑劣を極めしジェントルマン', 400, 'img/monster01.png', 'img/monster01_face.png', 40,90, 30,60 );
 $monsters[] = new WeponMonster( 'ドイル', 'ドイル', '麗しき人間凶器', 280, 'img/monster02.png', 'img/monster02_face.png', 30,40, 30,200 );

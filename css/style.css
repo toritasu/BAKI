@@ -134,53 +134,52 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 500%;
     height: 100%;
     z-index: 1;
     background-image: url("../img/character_cutin.gif");
     background-size: cover;
-    display: flex;
-    justify-content: space-between; }
+    transition: .3s; }
     .view-selection .character {
-      width: 55%;
+      float: left;
+      width: 20%;
+      height: 100%;
       color: #1E1E1E;
-      text-align: left;
-      padding: 30px; }
-      .view-selection .character-nickname {
-        font-size: 24px;
-        margin-bottom: 10px; }
-      .view-selection .character-name {
-        font-size: 36px;
-        margin-bottom: 15px; }
-      .view-selection .character-note {
-        font-size: 16px;
-        line-height: 20px; }
+      position: relative;
+      display: flex;
+      justify-content: space-between; }
+      .view-selection .character-info {
+        width: 55%;
+        text-align: left;
+        padding: 30px; }
+        .view-selection .character-info-nickname {
+          font-size: 24px;
+          margin-bottom: 10px; }
+        .view-selection .character-info-name {
+          font-size: 36px;
+          margin-bottom: 15px; }
+        .view-selection .character-info-note {
+          font-size: 20px;
+          line-height: 1.4em; }
+        @media screen and (max-width: 414px) {
+          .view-selection .character-info {
+            padding: 10px; }
+            .view-selection .character-info-nickname {
+              font-size: 4vw;
+              margin-bottom: 5px; }
+            .view-selection .character-info-name {
+              font-size: 10vw;
+              margin-bottom: 10px; }
+            .view-selection .character-info-note {
+              font-size: 3.5vw; } }
       .view-selection .character-face {
+        width: 50%;
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        width: 50%;
         position: absolute;
         right: 0;
         margin-right: 0; }
-      @media screen and (max-width: 414px) {
-        .view-selection .character {
-          width: 55%;
-          padding: 10px; }
-          .view-selection .character-nickname {
-            font-size: 4vw;
-            margin-bottom: 5px; }
-          .view-selection .character-name {
-            font-size: 10vw;
-            margin-bottom: 10px; }
-          .view-selection .character-note {
-            font-size: 3.5vw;
-            line-height: 1.3em; }
-          .view-selection .character-face {
-            width: 50%;
-            position: absolute;
-            right: 0;
-            margin-right: 0; } }
 
 .panel {
   box-sizing: border-box;
