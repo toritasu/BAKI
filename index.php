@@ -26,12 +26,8 @@
         <img src="img/clear.jpg" style="width:100%;">
         <p class="congratulations">
           遊んでくれてありがとう！<br>
-          合言葉をリプしてくれた方に先着１名で<br>
-          Amazonギフト券1000円分をプレゼント！<br><br>
-          合言葉<br>
-          <span style="color:#CC3535;">力みなくして解放のカタルシスはありえねェ・・・</span>
         </p>
-    <?php $_SESSION = array(); } ?>
+      <?php } ?>
 
       <!-- セッション変数が空ならキャラクター選択画面へ -->
     <?php }elseif(empty($_SESSION)){ ?>
@@ -64,7 +60,7 @@
                 </div>
                 <img class="character-face" src="<?php echo $val->getImgFace(); ?>" alt="<?php echo $val->getNameShort(); ?>">
               </div>
-            <?php endforeach ?>
+            <?php endforeach; ?>
           </div>
         </section>
 
@@ -190,11 +186,15 @@
 
     <?php } ?>
 
-  <footer class="footer">
+    <?php if($_SESSION['gameover'] || $_SESSION['clear'] || !empty($_SESSION)){ ?>
     <form method="post" action="">
       <input class="link_start" type="submit" name="reset" value="<< スタート画面に戻る">
     </form>
+    <?php } ?>
+
+  <footer class="footer">
     <a class="link_anime" href="http://baki-anime.jp/" target=”_blank”>TVアニメ「バキ」公式サイトへッ!!</a>
+    <p class="disclaimer">このゲームは「バキ」のファンサイトです。<br>公式とは一切関係ありません。</p>
   </footer>
 
   </main>
